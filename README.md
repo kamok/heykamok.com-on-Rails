@@ -1,3 +1,3 @@
 # First Rails App
 
-by [Ka Mok](heykamok.com)
+by [Ka Mok](http://heykamok.com)
