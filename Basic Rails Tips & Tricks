@@ -1,0 +1,30 @@
+Basic Rails Tips & Tricks
+
+To create a new page:
+
+	1a. navigate to app/controllers/pages_controller
+	1b. set up a new method under the PagesController class
+		eg. def about
+	  		end
+
+	2a. navigate to views/pages
+	2b. set up a new file 
+		eg. about.html.erb 
+
+	3a. navigate to routes (config/locales/routes.rb)
+	3b. set up a new route
+		eg. "about" => "pages#about"
+
+	1. Controller
+	2. The actual html page
+	3. Routes
+
+To add universal code to all pages (eg nav bar)
+
+	1a. navigate to views/layouts/application.html.erb
+	1b. type in the changes
+
+
+	
+
+
