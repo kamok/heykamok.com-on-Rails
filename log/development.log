@@ -1740,3 +1740,27 @@ Processing by PagesController#home as HTML
   Rendered pages/home.html.erb within layouts/application (0.0ms)
   Rendered layouts/_header.html.erb (1.0ms)
 Completed 200 OK in 149ms (Views: 148.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-21 02:12:17 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 8414ms (Views: 8384.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.self-8559616f8197d9543692f16f7ee1b54717914c19dd29cd743d67eb8b19dd88b4.css?body=1" for ::1 at 2016-04-21 02:12:27 -0400
+
+
+Started GET "/" for ::1 at 2016-04-21 02:22:58 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 526ms (Views: 504.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-21 02:23:07 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 206ms (Views: 204.6ms | ActiveRecord: 0.0ms)
