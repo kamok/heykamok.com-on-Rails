@@ -4976,3 +4976,64 @@ Processing by PagesController#home as HTML
   Rendered pages/home.html.erb within layouts/application (1.0ms)
   Rendered layouts/_header.html.erb (1.0ms)
 Completed 200 OK in 171ms (Views: 170.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 14:31:30 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 279ms (Views: 278.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 14:31:47 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 167ms (Views: 166.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 14:31:55 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 198ms (Views: 197.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 14:31:58 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 203ms (Views: 202.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-04-23 14:32:00 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (41.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 280ms (Views: 276.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 14:32:01 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 178ms (Views: 177.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 14:41:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+Completed 200 OK in 8781ms (Views: 8779.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1b9e969f748876a2e407f49f343a18137df438eb40186bc454a57f0b17c27b1d.js?body=1" for ::1 at 2016-04-23 14:41:11 -0400
+
+
+Started GET "/about" for ::1 at 2016-04-23 14:41:16 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 176ms (Views: 174.9ms | ActiveRecord: 0.0ms)
