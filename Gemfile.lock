@@ -54,6 +54,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
+    color-generator (0.0.4)
     concurrent-ruby (1.0.1)
     debug_inspector (0.0.2)
     devise (4.0.0)
@@ -169,6 +170,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   coffee-script-source (= 1.8.0)
+  color-generator
   devise (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails

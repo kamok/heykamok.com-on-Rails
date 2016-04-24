@@ -5037,3 +5037,3197 @@ Processing by PagesController#about as HTML
   Rendered pages/about.html.erb within layouts/application (1.0ms)
   Rendered layouts/_header.html.erb (0.0ms)
 Completed 200 OK in 176ms (Views: 174.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 19:00:07 -0400
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (958.1ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1096.1ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2247.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateHexGenerators (20160423225232)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (14.0ms)[0m  [1mCREATE TABLE "hex_generators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "hexcode" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160423225232"]]
+  [1m[36m (95.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for ::1 at 2016-04-23 19:44:08 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 481ms (Views: 480.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 19:44:09 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 185ms (Views: 184.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/click.self-d960e2b70a108b5f88f265dde3eaf42429ed24e9cf7951215060c15d9897cb8a.js?body=1" for ::1 at 2016-04-23 19:44:09 -0400
+
+
+Started GET "/" for ::1 at 2016-04-23 20:21:44 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 309ms (Views: 308.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 20:21:44 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 177ms (Views: 176.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/click.self-3c43ac95ab131d4056bc5159d7905d4c6d9230814e0444008cef7a8a5b7d2e22.js?body=1" for ::1 at 2016-04-23 20:21:45 -0400
+
+
+Started GET "/" for ::1 at 2016-04-23 20:21:46 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 164ms (Views: 163.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 20:21:47 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 169ms (Views: 168.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 20:29:16 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 276ms (Views: 276.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/click.self-ebed026736c065b811a585318df1db68f6ed7fada6484b10e7789fdd562a9450.js?body=1" for ::1 at 2016-04-23 20:29:16 -0400
+
+
+Started GET "/about" for ::1 at 2016-04-23 20:29:44 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (5.0ms)
+Completed 200 OK in 633ms (Views: 632.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 20:31:26 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 277ms (Views: 277.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/click.self-4992de79055aabbad85dc543b2401a497bc0e8627935e55b7d100102bd942b8b.js?body=1" for ::1 at 2016-04-23 20:31:26 -0400
+
+
+Started GET "/hex_generator/new_hex" for ::1 at 2016-04-23 20:31:27 -0400
+
+ActionController::RoutingError (uninitialized constant HexGeneratorController):
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (308.0ms)
+
+
+Started GET "/hex_generator" for ::1 at 2016-04-23 20:32:09 -0400
+
+ActionController::RoutingError (uninitialized constant HexGeneratorController):
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (70.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1323.1ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (878.1ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1996.1ms)
+
+
+Started GET "/hex_generator/new_hex" for ::1 at 2016-04-23 20:32:19 -0400
+
+ActionController::RoutingError (uninitialized constant HexGeneratorController):
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (300.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 20:39:32 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 161ms (Views: 160.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hex_generator/new_hex" for ::1 at 2016-04-23 20:39:33 -0400
+
+ActionController::RoutingError (uninitialized constant HexGeneratorController):
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (302.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 20:40:05 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 163ms (Views: 163.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hex_generator/new_hex" for ::1 at 2016-04-23 20:40:06 -0400
+
+ActionController::RoutingError (uninitialized constant HexGeneratorController):
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (301.0ms)
+
+
+Started GET "/hex_generator/new_hex" for ::1 at 2016-04-23 20:40:08 -0400
+
+ActionController::RoutingError (uninitialized constant HexGeneratorController):
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (305.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 20:55:37 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 186ms (Views: 185.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 20:55:38 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 158ms (Views: 157.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 20:56:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (5.0ms)
+Completed 200 OK in 628ms (Views: 627.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hex_generator/new_hex" for ::1 at 2016-04-23 20:56:16 -0400
+
+ActionController::RoutingError (uninitialized constant HexGeneratorController):
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (315.0ms)
+
+
+Started GET "/hex_generator/new_hex" for ::1 at 2016-04-23 21:06:32 -0400
+
+LoadError (Unable to autoload constant HexGeneratorController, expected C:/Users/Ka/Desktop/1monthrails/pinteresting/app/controllers/hex_generator_controller.rb to define it):
+  activesupport (4.2.5.1) lib/active_support/dependencies.rb:495:in `load_missing_constant'
+  activesupport (4.2.5.1) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  activesupport (4.2.5.1) lib/active_support/dependencies.rb:566:in `get'
+  activesupport (4.2.5.1) lib/active_support/dependencies.rb:597:in `constantize'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (990.1ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 21:17:25 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 349ms (Views: 348.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/click.self-7c819c7e948560cb52e07f1fe622ecce290f28de9fabaa9149f53bd707bf1aef.js?body=1" for ::1 at 2016-04-23 21:17:25 -0400
+
+
+Started GET "/get_hex" for ::1 at 2016-04-23 21:17:27 -0400
+
+ActionController::RoutingError (No route matches [GET] "/get_hex"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (307.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 21:17:52 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 334ms (Views: 333.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/click.self-4ce3d8df1df6cebc1222a4eff60f2005aca342859b4ae049a6eb93bf9beeb52e.js?body=1" for ::1 at 2016-04-23 21:17:52 -0400
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:17:53 -0400
+
+ActionController::RoutingError (No route matches [GET] "/get-hex"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (341.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:19:26 -0400
+
+ActionController::RoutingError (No route matches [GET] "/get-hex"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (315.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:19:39 -0400
+
+ActionController::RoutingError (No route matches [GET] "/get-hex"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (314.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 21:20:32 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 220ms (Views: 219.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:20:34 -0400
+
+LoadError (Unable to autoload constant HexGeneratorController, expected C:/Users/Ka/Desktop/1monthrails/pinteresting/app/controllers/hex_generator_controller.rb to define it):
+  activesupport (4.2.5.1) lib/active_support/dependencies.rb:495:in `load_missing_constant'
+  activesupport (4.2.5.1) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.5.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  activesupport (4.2.5.1) lib/active_support/dependencies.rb:566:in `get'
+  activesupport (4.2.5.1) lib/active_support/dependencies.rb:597:in `constantize'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (949.1ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 21:23:29 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 177ms (Views: 177.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:23:32 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 21:33:51 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 182ms (Views: 181.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:33:53 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:33:57 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:33:58 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:33:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:33:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:33:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:33:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:33:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:33:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:33:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:34:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:34:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:34:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:34:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:34:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:34:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:34:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:34:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:34:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:34:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:34:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:34:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:34:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:34:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:34:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:34:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:34:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:34:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 21:36:13 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 353ms (Views: 352.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/click.self-b076a085fbfd5527aaa28569b77a55c05714284df409ec8f691b1de4d62cda69.js?body=1" for ::1 at 2016-04-23 21:36:14 -0400
+
+
+Started GET "/gethex" for ::1 at 2016-04-23 21:36:14 -0400
+
+ActionController::RoutingError (No route matches [GET] "/gethex"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (311.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 21:39:27 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 319ms (Views: 318.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/click.self-af23d5e84388c4c7a5c0074b8a09c978539ed9d4d3a384f5d62b026307460763.js?body=1" for ::1 at 2016-04-23 21:39:28 -0400
+
+
+Started GET "/gethex" for ::1 at 2016-04-23 21:39:29 -0400
+
+ActionController::RoutingError (No route matches [GET] "/gethex"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (314.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 21:39:39 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 386ms (Views: 386.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/click.self-5546417b2c777236f13f623c4f90f5c5f305364c3ed3b385a249d91eb7793ebd.js?body=1" for ::1 at 2016-04-23 21:39:40 -0400
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:39:41 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:39:43 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:39:43 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:39:43 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:39:43 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:39:43 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:39:44 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:39:44 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:39:45 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:39:45 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:39:45 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:39:46 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:39:46 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:39:46 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:39:46 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:39:46 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:39:46 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 21:40:10 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 317ms (Views: 316.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/click.self-d8c357330aae8d2002ac3500fc0f8ae94a4701478ea873a49e21ee54dc0dcb66.js?body=1" for ::1 at 2016-04-23 21:40:11 -0400
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:40:12 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:40:13 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:40:13 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:40:14 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:40:14 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:40:14 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:40:14 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:40:15 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:40:15 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 21:40:53 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 328ms (Views: 328.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/click.self-f2ada79454bccc2d9936795f47bdd0ae730cdcf7cb9ab98e642c5252115e196d.js?body=1" for ::1 at 2016-04-23 21:40:54 -0400
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:40:54 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:40:57 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:40:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:40:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:40:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:40:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:40:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:40:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:02 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:02 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:02 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:02 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:04 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:04 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:04 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:04 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:06 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:06 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:10 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:10 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:10 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:10 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:11 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:11 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:11 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:11 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:11 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:11 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:11 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:11 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:11 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:11 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:12 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:12 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:12 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:12 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:12 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:12 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:12 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:12 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:13 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 21:41:44 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 195ms (Views: 194.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:45 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:46 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:46 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:46 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 21:41:51 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 184ms (Views: 183.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:53 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:41:53 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 21:42:25 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 290ms (Views: 289.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/click.self-40f58d8135b1fef1206858f06b683944ab4b483814628329673a042fb634d72b.js?body=1" for ::1 at 2016-04-23 21:42:25 -0400
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:42:26 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 21:43:34 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 375ms (Views: 374.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/click.self-d8aaa50a371ca227943c6a64f780b35dab11c525317ee469fd3b4ebbf4b114ae.js?body=1" for ::1 at 2016-04-23 21:43:35 -0400
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:43:36 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:43:37 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:43:37 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:43:38 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:43:38 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:43:38 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:43:39 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:43:39 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:43:39 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:43:39 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 21:56:59 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 199ms (Views: 198.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:57:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `random' for ["abcdef123456789"]:Array):
+  app/models/hex_generator.rb:8:in `new_hex'
+  app/controllers/hex_generators_controller.rb:3:in `get_hex'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (956.1ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:57:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `random' for ["abcdef123456789"]:Array):
+  app/models/hex_generator.rb:8:in `new_hex'
+  app/controllers/hex_generators_controller.rb:3:in `get_hex'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (7.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (967.1ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:57:02 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `random' for ["abcdef123456789"]:Array):
+  app/models/hex_generator.rb:8:in `new_hex'
+  app/controllers/hex_generators_controller.rb:3:in `get_hex'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (990.1ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:57:04 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `random' for ["abcdef123456789"]:Array):
+  app/models/hex_generator.rb:8:in `new_hex'
+  app/controllers/hex_generators_controller.rb:3:in `get_hex'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (949.1ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:57:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `random' for ["abcdef123456789"]:Array):
+  app/models/hex_generator.rb:8:in `new_hex'
+  app/controllers/hex_generators_controller.rb:3:in `get_hex'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (967.1ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:57:06 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `random' for ["abcdef123456789"]:Array):
+  app/models/hex_generator.rb:8:in `new_hex'
+  app/controllers/hex_generators_controller.rb:3:in `get_hex'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (968.1ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:57:07 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `random' for ["abcdef123456789"]:Array):
+  app/models/hex_generator.rb:8:in `new_hex'
+  app/controllers/hex_generators_controller.rb:3:in `get_hex'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (989.1ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 21:57:46 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 220ms (Views: 219.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:57:48 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:57:49 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 21:57:49 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 22:00:49 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 222ms (Views: 221.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:00:50 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:00:51 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 22:01:40 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 209ms (Views: 208.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:01:42 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:01:42 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:01:42 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:01:43 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:01:43 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 22:03:49 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 229ms (Views: 228.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:51 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:53 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:53 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:53 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:53 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:53 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:53 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:53 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:54 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:54 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:54 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:54 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:54 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:54 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:55 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:55 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:55 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:55 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:55 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:55 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:56 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:56 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:56 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:56 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:56 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:56 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:56 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:56 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:56 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:57 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:57 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:57 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:58 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:58 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:58 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:58 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:03:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:02 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:02 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:02 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:03 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:03 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:04 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:04 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:06 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:06 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:06 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:06 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:07 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:07 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:07 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:04:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 22:07:19 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 246ms (Views: 245.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:07:20 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:07:21 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:07:22 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:07:22 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:07:22 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:07:22 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:07:22 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:07:23 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:07:23 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:07:23 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:07:23 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:07:24 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:07:24 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:07:24 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:07:24 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:07:25 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:07:25 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:07:25 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:07:25 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:07:26 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 22:10:05 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 261ms (Views: 259.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:10:06 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:10:07 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:10:07 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:10:07 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:10:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:10:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:10:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:10:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:10:09 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:10:09 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:10:09 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:10:10 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:10:10 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 22:17:15 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 243ms (Views: 242.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:16 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:17 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:17 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:17 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:18 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:18 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:18 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:18 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:18 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:19 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:23 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:23 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:23 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:24 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:24 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:24 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:24 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:39 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:40 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:47 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:17:48 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 22:19:51 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 440ms (Views: 440.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/click.self-0416e61ef1b0af9127fb66a5ae7147c9ff79b1e764bcf6c009df258caf61da60.js?body=1" for ::1 at 2016-04-23 22:19:52 -0400
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:19:53 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:19:57 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:19:57 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:19:58 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:19:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:03 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:03 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:03 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:04 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:04 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:04 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:06 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:06 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:06 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:07 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:07 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:07 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:07 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:09 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:09 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:09 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:10 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:23 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:35 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:37 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:38 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:39 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:40 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:40 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:42 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:43 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:44 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:49 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:49 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:49 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:50 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:51 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:51 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:53 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:20:54 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:21:11 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:21:12 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:21:15 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:21:15 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:21:15 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:21:16 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:21:16 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:21:16 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:21:20 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:21:20 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:21:20 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:21:21 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:21:21 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:21:22 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 22:21:55 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 394ms (Views: 394.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/click.self-f0a5cbac788413c65224e30b9e4c4366928dbe88e9ee93fdd8cee32314b93479.js?body=1" for ::1 at 2016-04-23 22:21:56 -0400
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:21:57 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:21:58 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:21:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:22:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:22:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:22:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 22:23:49 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 227ms (Views: 226.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:23:50 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:23:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:23:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:23:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 22:27:55 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 248ms (Views: 247.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-04-23 22:38:14 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 246ms (Views: 245.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:38:16 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:38:17 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:38:17 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:38:17 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:38:17 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:38:18 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:38:18 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:38:18 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:38:18 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:38:19 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:38:19 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-04-23 22:38:19 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)

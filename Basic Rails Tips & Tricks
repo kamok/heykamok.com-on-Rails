@@ -77,3 +77,7 @@ define a route that
 use an AJAX request to get the hex value load it into the DOM 
 
 rails g model HexGenerator
+
+make gem for hexcode generator
+
+rack - look up

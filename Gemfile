@@ -32,3 +32,4 @@ end
 #Newer version of this gem doesn't work with Windows 7. So we get older.
 gem 'coffee-script-source', '1.8.0'
 gem 'bootstrap-sass'
+gem 'color-generator'
