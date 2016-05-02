@@ -1,5 +1,3 @@
-# First Rails App
-
-1 month rails
+# Personal website redo
 
 by [Ka Mok](http://heykamok.com)
