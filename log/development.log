@@ -9430,3 +9430,1058 @@ Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
 Started GET "/get-hex" for ::1 at 2016-05-02 00:18:18 -0400
 Processing by HexGeneratorsController#get_hex as */*
 Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:29 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:29 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-05-02 00:28:30 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 10652ms (Views: 10651.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:45 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:46 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:47 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:47 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:47 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:48 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:48 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:48 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:49 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:49 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:49 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:50 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:50 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:51 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:51 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:51 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:51 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:53 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:53 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:53 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:53 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:54 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:54 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:54 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:55 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:55 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:28:56 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:29:06 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:29:07 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:29:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:29:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:29:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:29:09 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-05-02 00:29:53 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 163ms (Views: 162.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:29:56 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:29:56 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:29:57 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:29:57 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:29:58 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:29:58 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:29:58 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:29:58 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:29:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:29:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:29:59 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:30:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:30:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:30:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:30:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:30:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:30:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:30:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:30:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:30:02 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:30:02 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:30:02 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:30:03 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:30:03 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:30:03 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:30:03 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:30:04 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:30:04 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:30:04 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:30:04 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:30:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-05-02 00:37:14 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 166ms (Views: 166.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-05-02 00:39:02 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 251ms (Views: 250.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.self-6d7630c1cf285e990a561bc5ea5fe625af3cbba40fb21da8f66de479319e8b64.css?body=1" for ::1 at 2016-05-02 00:39:02 -0400
+
+
+Started GET "/about" for ::1 at 2016-05-02 00:39:06 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 161ms (Views: 160.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:39:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:39:09 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:39:09 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:39:09 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:39:10 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-05-02 00:39:53 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 269ms (Views: 268.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/click.self-2c7fc63669d4c2a59d5f73576359bf4f4a6cc1b62c887e86238cb71cce3f63c3.js?body=1" for ::1 at 2016-05-02 00:39:53 -0400
+
+
+Started GET "/about" for ::1 at 2016-05-02 00:44:59 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 255ms (Views: 254.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/click.self-ec79a04cd208be01228a288c2cfe4fc302002387ca303837c9b7de008c671cd5.js?body=1" for ::1 at 2016-05-02 00:45:00 -0400
+
+
+Started GET "/about" for ::1 at 2016-05-02 00:46:08 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 272ms (Views: 271.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/click.self-73786c488edde39e1ed59b6dc64f90ed2677af35710e304d263d2cfe4d8899cf.js?body=1" for ::1 at 2016-05-02 00:46:09 -0400
+
+
+Started GET "/about" for ::1 at 2016-05-02 00:46:26 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 277ms (Views: 276.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/click.self-2dd474abf6989b48155278c1ec288bcc537fb69fc40ae780b6847b8e14b39a71.js?body=1" for ::1 at 2016-05-02 00:46:26 -0400
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:46:27 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:46:28 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:46:28 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:46:28 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:46:32 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:46:32 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:46:32 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:46:33 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-05-02 00:47:38 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 270ms (Views: 269.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/click.self-000295ff581e4bbd12b989446266b3bcb7fc5c624a858b86780f018d64633638.js?body=1" for ::1 at 2016-05-02 00:47:39 -0400
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:47:40 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:47:41 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:47:41 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:47:41 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:47:41 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:47:43 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:47:43 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-05-02 00:47:48 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 181ms (Views: 180.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:49:37 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:49:37 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-05-02 00:49:49 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 170ms (Views: 169.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:49:51 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:49:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:49:52 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:49:53 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:49:53 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:49:54 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:49:54 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-05-02 00:49:55 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 156ms (Views: 155.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:49:58 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:50:20 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-05-02 00:50:32 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 238ms (Views: 237.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.self-c4bdebf3ba0331a8c9d6c438aa889ab61da07362475a0918ea6cf4d9302a0b5b.css?body=1" for ::1 at 2016-05-02 00:50:32 -0400
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:50:34 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:50:35 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:50:35 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-05-02 00:50:46 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 165ms (Views: 164.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-05-02 00:50:52 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 164ms (Views: 164.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:50:54 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:50:54 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:50:54 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:50:55 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:50:55 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:50:57 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:50:57 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:50:57 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:50:57 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:50:58 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:50:58 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:50:58 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:00 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:01 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:02 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:02 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:02 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:03 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:03 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:03 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:03 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:03 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:04 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:04 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:04 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:04 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:04 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:04 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:05 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:06 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:06 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:06 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:06 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:06 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:06 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:06 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:07 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:07 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:07 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:07 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:07 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:07 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:07 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:07 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 00:51:08 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-05-02 15:38:50 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 340ms (Views: 339.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.self-c4bdebf3ba0331a8c9d6c438aa889ab61da07362475a0918ea6cf4d9302a0b5b.css?body=1" for ::1 at 2016-05-02 15:38:51 -0400
+
+
+Started GET "/assets/click.self-785ed8df0721a58b76032d5a0ec0367c9b23606047fcccfd0f2f59c6f26170c2.js?body=1" for ::1 at 2016-05-02 15:38:51 -0400
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 15:38:54 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 15:38:54 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 15:38:55 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 15:38:55 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get-hex" for ::1 at 2016-05-02 15:38:55 -0400
+Processing by HexGeneratorsController#get_hex as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-05-02 15:48:46 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 185ms (Views: 185.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-02 15:48:48 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 231ms (Views: 230.5ms | ActiveRecord: 0.0ms)
