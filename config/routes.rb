@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get "about" => "pages#about"
   get "blog" => "pages#blog"
 
-  resources :posts
+  resources :posts, path: 'blog'
   
   get "get-hex", to: "hex_generators#get_hex"
 end
