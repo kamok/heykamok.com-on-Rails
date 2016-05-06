@@ -29,10 +29,10 @@ group :test do
   gem 'factory_girl_rails', '~> 4.2.1'
 end
 
-#my own gems
-
+#custom gems
 gem 'coffee-script-source', '1.8.0' #Newer version of this gem doesn't work with Windows 7. So we get older.
 gem 'bootstrap-sass'
 gem 'color-generator'
 gem 'pg'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+gem 'friendly_id', '~> 5.1.0'
