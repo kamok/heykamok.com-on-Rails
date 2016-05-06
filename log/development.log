@@ -12856,3 +12856,59 @@ Processing by PostsController#show as HTML
   Rendered posts/show.html.erb within layouts/application (1.0ms)
   Rendered layouts/_header.html.erb (0.0ms)
 Completed 200 OK in 167ms (Views: 164.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blog" for ::1 at 2016-05-06 16:51:44 -0400
+Processing by PagesController#blog as HTML
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered pages/blog.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 172ms (Views: 166.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/blog/new" for ::1 at 2016-05-06 16:51:45 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.0ms)
+  Rendered posts/new.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 181ms (Views: 180.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog" for ::1 at 2016-05-06 16:51:48 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1BC0vuhbXeOvVkWJ4px7sjJx3ksz0pi85YwP7Ppo0pRdxGnaIZcIEkwHdjLn0lTPZ9pYHQyd+FRGubyn+9fu7g==", "post"=>{"title"=>"csdefgg", "body"=>"dfgh"}, "commit"=>"Create Post"}
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mPost Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "posts" WHERE ("posts"."id" IS NOT NULL) AND "posts"."slug" = $1 LIMIT 1[0m  [["slug", "csdefgg"]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "posts" ("title", "body", "slug", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "csdefgg"], ["body", "dfgh"], ["slug", "csdefgg"], ["created_at", "2016-05-06 20:51:48.315377"], ["updated_at", "2016-05-06 20:51:48.315377"]]
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/blog/csdefgg
+Completed 302 Found in 14ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/blog/csdefgg" for ::1 at 2016-05-06 16:51:48 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"csdefgg"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "csdefgg"]]
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 168ms (Views: 165.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog" for ::1 at 2016-05-06 16:51:57 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1BC0vuhbXeOvVkWJ4px7sjJx3ksz0pi85YwP7Ppo0pRdxGnaIZcIEkwHdjLn0lTPZ9pYHQyd+FRGubyn+9fu7g==", "post"=>{"title"=>"csdef gg", "body"=>"dfgh"}, "commit"=>"Create Post"}
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Exists (1.0ms)[0m  SELECT  1 AS one FROM "posts" WHERE ("posts"."id" IS NOT NULL) AND "posts"."slug" = $1 LIMIT 1  [["slug", "csdef-gg"]]
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "posts" ("title", "body", "slug", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "csdef gg"], ["body", "dfgh"], ["slug", "csdef-gg"], ["created_at", "2016-05-06 20:51:57.393896"], ["updated_at", "2016-05-06 20:51:57.393896"]]
+  [1m[35m (75.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/blog/csdef-gg
+Completed 302 Found in 83ms (ActiveRecord: 78.0ms)
+
+
+Started GET "/blog/csdef-gg" for ::1 at 2016-05-06 16:51:57 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"csdef-gg"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "csdef-gg"]]
+  Rendered posts/show.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 158ms (Views: 156.3ms | ActiveRecord: 0.0ms)

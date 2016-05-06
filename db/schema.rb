@@ -13,8 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20160506202804) do
 
-  # I think this extension is from sqlite3. Try deleting this when you push live to heroku 
-  #and see what breaks.
+  # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "friendly_id_slugs", force: :cascade do |t|
