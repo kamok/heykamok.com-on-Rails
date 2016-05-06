@@ -11,25 +11,28 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise', '~> 4.0.0'
 
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
-  gem 'sqlite3'
-end
-
 group :development do
-  # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+  gem 'guard-rspec', require: false
 end
 
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
+end
+
+group :development, :test do
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'factory_girl_rails', '~> 4.2.1'
 end
 
 #my own gems
 
-#Newer version of this gem doesn't work with Windows 7. So we get older.
-gem 'coffee-script-source', '1.8.0'
+gem 'coffee-script-source', '1.8.0' #Newer version of this gem doesn't work with Windows 7. So we get older.
 gem 'bootstrap-sass'
 gem 'color-generator'
+gem 'pg'
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
