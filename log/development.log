@@ -12912,3 +12912,44 @@ Processing by PostsController#show as HTML
   Rendered posts/show.html.erb within layouts/application (0.0ms)
   Rendered layouts/_header.html.erb (1.0ms)
 Completed 200 OK in 158ms (Views: 156.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-06 17:26:09 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 168ms (Views: 167.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog" for ::1 at 2016-05-06 17:26:11 -0400
+Processing by PagesController#blog as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered pages/blog.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 163ms (Views: 157.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/blog/new" for ::1 at 2016-05-06 17:26:13 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.0ms)
+  Rendered posts/new.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 172ms (Views: 172.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog" for ::1 at 2016-05-06 17:26:15 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R5yssjUOugoM7AAHHSJzFqetdEjStv/S8wF4nQCS9dvOSHHW/MLv+++9M7wYbFxr8gbyHu35nzpQNMvWAS3JoQ==", "post"=>{"title"=>"", "body"=>""}, "commit"=>"Create Post"}
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  Rendered posts/_form.html.erb (2.0ms)
+  Rendered posts/new.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 179ms (Views: 173.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-06 17:26:35 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 160ms (Views: 160.3ms | ActiveRecord: 0.0ms)
