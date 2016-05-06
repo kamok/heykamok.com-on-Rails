@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 
-  before_action :set_post, only: [:show, :edit, :update]
+  before_action :set_post, only: [:show, :edit, :update, :destroy]
   
   def new
     @post = Post.new
@@ -35,6 +35,14 @@ class PostsController < ApplicationController
       flash[:notice] = "Post has not been updated."
       render "edit"
     end
+  end
+
+  def destroy
+    @post.destroy
+
+    flash[:notice] = "Post has been deleted."
+
+    redirect_to "/blog"
   end
 
   private
