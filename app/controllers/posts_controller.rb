@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
 
+  before_action :set_post, only: [:show, :edit, :update]
+  
   def new
     @post = Post.new
   end
@@ -18,7 +20,21 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.friendly.find(params[:id])
+  end
+
+  def edit
+  end
+
+  def update
+    @post.update(post_params)
+
+    if @post.save
+      flash[:notice] = "Post has been updated."
+      redirect_to @post
+    else
+      flash[:notice] = "Post has not been updated."
+      render "edit"
+    end
   end
 
   private
@@ -26,4 +42,9 @@ class PostsController < ApplicationController
   def post_params
     params.require(:post).permit(:title, :body)
   end
+
+  def set_post
+    @post = Post.friendly.find(params[:id])
+  end
+
 end
