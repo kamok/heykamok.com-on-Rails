@@ -3,7 +3,7 @@
 by [Ka Mok](http://heykamok.com)
 
 Todo :
- 2. Add the -RUD in CRUD for post
- 3. Get live on Heroku
- 4. Bootstrap
+ 1. Currently : Can't access blog from navbar when logged in.
+ 		Needs to: Fix above, also make sure we require login to use blog new, edit, update, destroy, functions.
+ 2. Bootstrap
 
