@@ -10,17 +10,23 @@ $body-bg: #e6e6e6 ;
 }
 
 
-
-
-
 //navbar
 
 $navbar-height: 							40px ;
 $navbar-default-bg: 					white ;
 $navbar-default-link-color: 	#006699 ;
 
+.navbar{
+	z-index: 1000;
+}
 .navbar-brand{
 	font-weight:bold;
 }
 
+#pronunciation {
+	position: relative;
+	top: 20px;
+	left: 100px;
+
+}
 @import 'bootstrap';
