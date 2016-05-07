@@ -1,7 +1,11 @@
 <% title(@post.title, "Kablog") %>
 
+<%= link_to "Back", blog_path %>
+
 <h2><%= @post.title %></h2>
 <%= simple_format(@post.body) %>
 
-<%= link_to "Edit Post", edit_post_path %>
-<%= link_to "Delete Post", @post, method: :delete %>
+<% if user_signed_in? %>
+	<%= link_to "Edit Post", edit_post_path %>
+	<%= link_to "Delete Post", @post, method: :delete %>
+<% end %>
