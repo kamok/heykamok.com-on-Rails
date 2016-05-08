@@ -5,10 +5,7 @@ $font-family-sans-serif: 'Raleway', sans-serif;
 //body
 $body-bg: #e6e6e6 ;
 
-.center {
-	text-align: center ;
-}
-
+//intro
 
 //navbar
 
@@ -23,10 +20,4 @@ $navbar-default-link-color: 	#006699 ;
 	font-weight:bold;
 }
 
-#pronunciation {
-	position: relative;
-	top: 20px;
-	left: 100px;
-
-}
 @import 'bootstrap';
