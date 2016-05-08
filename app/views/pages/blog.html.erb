@@ -1,11 +1,13 @@
-<h2>Kablog</h2>
+<div id ="adjust-down" class= "container">
+	<h1>Kablog</h1>
 
-<% if user_signed_in? %>
-	<%= link_to "New Post", new_post_path %>
-<% end %>
-
-<ul>
-	<% @post.each do |post| %>
-		<li><%= link_to post.title, post %></li>
+	<% if user_signed_in? %>
+		<%= link_to "New Post", new_post_path %>
 	<% end %>
-</ul> 
+
+	<ul>
+		<% @post.each do |post| %>
+			<li><%= link_to post.title, post %></li>
+		<% end %>
+	</ul> 
+</div>

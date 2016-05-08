@@ -9,3 +9,14 @@
     background-color: white;
     border-color: #b3e7ff;
 }
+
+//Adjust for navbar
+#adjust-down {
+	margin-top: 50px;
+}
+
+@media(min-width:767px) {
+	#adjust-down {
+	margin-top: 70px;
+}
+}

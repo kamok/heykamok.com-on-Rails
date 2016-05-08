@@ -1,11 +1,12 @@
 <% title(@post.title, "Kablog") %>
 
-<%= link_to "Back", blog_path %>
+<div id ="adjust-down" class= "container">
+	<%= link_to "Back", blog_path %>
+	<h2><%= @post.title %></h2>
+	<%= simple_format(@post.body) %>
 
-<h2><%= @post.title %></h2>
-<%= simple_format(@post.body) %>
-
-<% if user_signed_in? %>
-	<%= link_to "Edit Post", edit_post_path %>
-	<%= link_to "Delete Post", @post, method: :delete %>
-<% end %>
+	<% if user_signed_in? %>
+		<%= link_to "Edit Post", edit_post_path %>
+		<%= link_to "Delete Post", @post, method: :delete %>
+	<% end %>
+</div>
