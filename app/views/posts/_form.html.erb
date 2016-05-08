@@ -12,16 +12,18 @@
 		</div>
 	<% end %>
 
-<p>
-	<%= f.label :title %><br />
-	<%= f.text_field :title %>
-</p>
+	<div class="form-group">
+		<%= f.label :title %>
+		<%= f.text_field :title, class:"form-control" %>
+	</div>
 
-<p>
-	<%= f.label :body %><br />
-	<%= f.text_field :body %>
-</p>
+	<div class="form-group">
+		<%= f.label :body %>
+		<%= f.text_area :body, class:"form-control" %>
+	</div>
 
-	<%= f.submit %>
+	<div class="form-group">
+		<%= f.submit class:"btn btn-primary"%>
+	</div>
 	
 <% end %>
