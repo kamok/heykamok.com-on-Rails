@@ -16,10 +16,6 @@ html {
         top: 0;
         width: 100%;
     }
-
-    .top-nav-collapse {
-        padding: 0;
-    }
 }
 
 @media(max-width:766px) {

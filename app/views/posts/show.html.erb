@@ -1,6 +1,5 @@
+<div id="adjust-down" class="container">
 <% title(@post.title, "Kablog") %>
-
-<div id ="adjust-down" class= "container">
 	<%= link_to "Back", blog_path %>
 	<h2><%= @post.title %></h2>
 	<%= simple_format(@post.body) %>
