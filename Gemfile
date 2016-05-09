@@ -9,7 +9,6 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'devise', '~> 4.0.0'
 
 group :development do
   gem 'web-console', '~> 2.0'
@@ -32,8 +31,10 @@ end
 #custom gems
 gem 'coffee-script-source', '1.8.0' #Newer version of this gem doesn't work with Windows 7. So we get older.
 gem 'bootstrap-sass' , '~> 3.3.6'
+gem 'bootstrap-wysihtml5-rails'
 gem 'color-generator'
+gem 'devise', '~> 4.0.0'
+gem "font-awesome-rails"
+gem 'friendly_id', '~> 5.1.0'
 gem 'pg'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-gem 'friendly_id', '~> 5.1.0'
-gem "font-awesome-rails"

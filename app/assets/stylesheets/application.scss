@@ -18,7 +18,13 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:800,400);
 $font-family-sans-serif: 'Raleway', sans-serif;
 
-* body
+body{
+	h1, h2 {
+		font-weight:800;
+	}
+}
+
+/*body*/
 $body-bg: #e6e6e6 ;
 $brand-primary: #339933;
 
@@ -56,3 +62,4 @@ $alert-border-radius: 0px;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "bootstrap-wysihtml5/bootstrap3-wysihtml5";
