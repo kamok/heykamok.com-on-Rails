@@ -7,9 +7,9 @@
 .alert-info {
     color: #006699;
     background-color: white;
-    border-color: #b3e7ff;
+    border-color: #ccc;
     position:absolute;
-    top: 50px;
+    top: 40px;
     width:100%;
 
 }
@@ -22,7 +22,7 @@
 @media(min-width:767px) {
 	.alert-info {
 		position:absolute;
-	  top: 70px;
+	  top: 65px;
 	}
 
 	#adjust-down {
