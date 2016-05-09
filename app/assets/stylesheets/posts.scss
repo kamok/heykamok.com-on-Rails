@@ -2,16 +2,26 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//WYSIWYG editor
 #post_body {
 	width:100%;
 	height: 500px;
 }
 
-#adjust-down{
+#post-view{
 	li{
 		line-height: 10%;
 	}
+}
+
+//Post View Buttons
+#blog-view-nav {
+	list-style: none;
 	ul{
-		padding:0 40px;
+		padding: 0;
+		li {
+			display: inline;
+			margin: 10px;
+		}
 	}
 }

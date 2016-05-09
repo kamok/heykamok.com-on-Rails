@@ -1,11 +1,20 @@
-<div id="adjust-down" class="container">
 <% title(@post.title, "Kablog") %>
-	<%= link_to "Back", blog_path %>
-	<h2><%= @post.title %></h2>
-	<%= simple_format(@post.body) %>
+<div id="adjust-down" class="container">
+	<div id="blog-view-nav">
+		<ul>
+			<li><%= link_to "Back", blog_path %></li>
 
-	<% if user_signed_in? %>
-		<%= link_to "Edit Post", edit_post_path %>
-		<%= link_to "Delete Post", @post, method: :delete %>
-	<% end %>
+			<% if user_signed_in? %>
+				<li><%= link_to "Edit Post", edit_post_path %></li>
+				<li><%= link_to "Delete Post", @post, method: :delete %></li>
+			<% end %>
+
+		</ul>
+	</div>
+
+	<div id="post-view">
+		<h2><%= @post.title %></h2>
+		<%= simple_format(@post.body) %>
+	</div>
+
 </div>
