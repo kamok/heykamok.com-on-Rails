@@ -31,7 +31,7 @@ end
 
 #custom gems
 gem 'coffee-script-source', '1.8.0' #Newer version of this gem doesn't work with Windows 7. So we get older.
-gem 'bootstrap-sass'
+gem 'bootstrap-sass' , '~> 3.3.6'
 gem 'color-generator'
 gem 'pg'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?

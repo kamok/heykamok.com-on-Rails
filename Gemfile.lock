@@ -243,7 +243,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  bootstrap-sass
+  bootstrap-sass (~> 3.3.6)
   capybara
   coffee-rails (~> 4.1.0)
   coffee-script-source (= 1.8.0)
