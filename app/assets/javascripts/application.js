@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require bootstrap-tour.min
 //= require bootstrap-wysihtml5
 //= require_tree .
 
@@ -20,4 +21,24 @@ $(document).ready(function(){
     $('.wysihtml5').each(function(i, elem) {
       $(elem).wysihtml5({ toolbar:{ "fa": true, 'html': true} });
     });
-})
+	// Instance the tour
+	var tour = new Tour({
+	  steps: [
+	  {
+	    element: "body",
+	    title: "Title of my step",
+	    content: "Content of my step"
+	  },
+	  {
+	    element: ".nav",
+	    title: "Title of my step",
+	    content: "Content of my step"
+	  }
+	]});
+
+	// Initialize the tour
+	tour.init();
+
+	// Start the tour
+	tour.start();
+});

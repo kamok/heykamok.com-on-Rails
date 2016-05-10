@@ -10,8 +10,6 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require font-awesome
- *= require_tree .
  */
 
 /*font*/
@@ -64,5 +62,12 @@ $alert-border-radius: 0px;
 
 
 @import "bootstrap-sprockets";
+@import "bootstrap-tour.min";
 @import "bootstrap";
 @import "bootstrap-wysihtml5/bootstrap3-wysihtml5";
+@import "about";
+@import "bootstrap-social";
+@import "pages";
+@import "posts";
+@import "scrolling-nav";
+@import "font-awesome";
