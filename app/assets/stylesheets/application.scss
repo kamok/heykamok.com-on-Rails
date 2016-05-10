@@ -34,12 +34,14 @@ $brand-primary: #339933;
 	background-image: asset-url("background-2.jpg");
 	background-repeat: no-repeat;
 	background-position: center; 
+	color:#262626;
 }
 
 #ka-stack{
-	margin-top:  7%;
-	h3{
-	line-height: 0.5;
+	margin-top:  35px;
+	h4{
+		font-weight:800;
+	line-height: 0.2;
 	}
 }
 

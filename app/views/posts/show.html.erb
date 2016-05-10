@@ -2,11 +2,11 @@
 <div id="adjust-down" class="container">
 	<div id="blog-view-nav">
 		<ul>
-			<li><%= link_to "Back", blog_path %></li>
+			<li><%= link_to "Back", blog_path, class:'btn btn-primary'%></li>
 
 			<% if user_signed_in? %>
-				<li><%= link_to "Edit Post", edit_post_path %></li>
-				<li><%= link_to "Delete Post", @post, method: :delete %></li>
+				<li><%= link_to "Edit Post", edit_post_path, class:'btn btn-primary' %></li>
+				<li><%= link_to "Delete Post", @post, method: :delete, class:'btn btn-danger' %></li>
 			<% end %>
 
 		</ul>
