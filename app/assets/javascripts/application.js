@@ -17,6 +17,7 @@
 //= require bootstrap-wysihtml5
 //= require_tree .
 
+//WYSIWYG
 $(document).ready(function(){
     $('.wysihtml5').each(function(i, elem) {
       $(elem).wysihtml5({ toolbar:{ "fa": true, 'html': true} });
@@ -25,16 +26,11 @@ $(document).ready(function(){
 	var tour = new Tour({
 	  steps: [
 	  {
-	    element: "body",
-	    title: "Title of my step",
-	    content: "Content of my step"
-	  },
-	  {
-	    element: ".nav",
-	    title: "Title of my step",
-	    content: "Content of my step"
-	  }
-	]});
+	    element: "#bootstrap-tour-selector",
+	    title: "Greetings Visitor",
+	    content: "You can use these nav buttons on the left to navigate down this homepage!"
+	  }]
+	});
 
 	// Initialize the tour
 	tour.init();
