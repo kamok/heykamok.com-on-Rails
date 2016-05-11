@@ -28,7 +28,7 @@ $(document).ready(function(){
 	  {
 	    element: "#bootstrap-tour-selector",
 	    title: "Greetings Visitor",
-	    content: "You can use these nav buttons on the left to navigate down this homepage!"
+	    content: "You can use these nav buttons on the left to navigate down this homepage with style."
 	  }]
 	});
 
