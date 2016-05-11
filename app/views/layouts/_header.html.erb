@@ -22,7 +22,7 @@
 
     <div class="collapse navbar-collapse navbar-ex1-collapse">
     <!-- appears on root only -->
-      <% if current_page?('/') %>
+      <% if current_page?('/') and browser.device.mobile? == nil %>
         <ul class="nav navbar-nav" id="bootstrap-tour-selector">
           <li><a class="page-scroll" href="#page-top"></a></li>
           <li><a class="page-scroll" href="#about">About</a></li>
