@@ -3,7 +3,6 @@
 by [Ka Mok](http://heykamok.com)
 
 Todo :
- 1. Tweak the bootstrap tour
  2. Bootstrap
  	b. Make the Blog pretty
  3. Blog - Add date time
