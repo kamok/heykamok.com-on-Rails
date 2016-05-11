@@ -15,6 +15,6 @@
 	<div id="post-view">
 		<h2><%= @post.title %></h2>
 		<%= simple_format(@post.body) %>
+		Last updated on: <%= @post.updated_at.strftime("%m/%d/%Y")%>
 	</div>
-
 </div>

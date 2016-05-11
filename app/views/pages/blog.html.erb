@@ -7,7 +7,7 @@
 
 	<ul>
 		<% @post.each do |post| %>
-			<li><%= link_to post.title, post %></li>
+			<li><%= post.created_at.strftime("%m/%d/%Y")%><%= link_to post.title, post %></li>
 		<% end %>
 	</ul> 
 </div>
