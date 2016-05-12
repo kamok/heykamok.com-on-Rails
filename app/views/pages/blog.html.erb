@@ -15,7 +15,7 @@
 
 	<div class="col-lg-6">
 		<ul>
-			<% @post.offset(1).each do |post| %>
+			<% @post.where('title != ?', 'Reading List').each do |post| %>
 				<li>
 				<%= post.created_at.strftime("%m/%d/%Y")%>
 				<%= link_to post.title, post %>
