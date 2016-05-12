@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root "pages#home"
-  get "about" => "pages#about"
+  get "toys" => "pages#toys"
   get "blog" => "pages#blog"
 
   resources :posts, path: 'blog'
