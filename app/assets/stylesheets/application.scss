@@ -16,6 +16,8 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:800,400);
 $font-family-sans-serif: 'Raleway', sans-serif;
 
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+
 $font-size-base: 16px;
 body{
 	h1, h2 {
@@ -30,23 +32,6 @@ $brand-primary: #339933;
 span.line {
   display: inline-block;
 }
-
-/*intro*/
-.intro-section {
-	background-image: asset-url("background-2.jpg");
-	background-repeat: no-repeat;
-	background-position: center; 
-	color:#262626;
-}
-
-#ka-stack{
-	margin-top:  35px;
-	h4{
-		font-weight:800;
-	// line-height: 0.2;
-	}
-}
-
 
 /*navbar*/
 

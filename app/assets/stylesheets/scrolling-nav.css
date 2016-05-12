@@ -17,10 +17,22 @@
     }
 }
 
+/*intro*/
 .intro-section {
     height: 770px;
     padding-top: 150px;
     text-align: center;
+    background-image: asset-url("background-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    color:#262626;
+}
+
+#ka-stack{
+    margin-top:  35px;
+    h4{
+        font-family: 'Comfortaa', cursive;
+    }
 }
 
 .about-section {
@@ -29,6 +41,12 @@
     padding-top: 50px;
     text-align: center;
     background: #eee;
+}
+
+#about-quote{
+    padding:20px;
+    font-family: 'Comfortaa', cursive;
+    color:#339933;
 }
 
 .services-section {
@@ -44,8 +62,4 @@
     text-align: center;
     background: #404040;
     color:white;
-}
-
-.col-lg-6 {   
-    text-align: left;
 }
