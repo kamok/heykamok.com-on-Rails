@@ -1,17 +1,26 @@
-<div id ="adjust-down" class= "container">
+<% title("Kablog") %>
+<div id="adjust-down" class="container">
 	<h1>Kablog</h1>
 
 	<% if user_signed_in? %>
 		<%= link_to "New Post", new_post_path, class:'btn btn-primary', id:'new-post-button' %>
 	<% end %>
 
-	<div class="col-lg-6">
-	<h3><%= simple_format@post.first.title %></h3>
-	<%= simple_format@post.first.body %>
+	<div class="col-lg-6" id='reading-list'>
+		<h3><%= @post.first.title %></h3>
+
+		<%= simple_format@post.first.body %>
+		Last updated on: <%= @post.first.updated_at.strftime("%m/%d/%Y")%>
 	</div>
 
-		<% @post.offset(1).each do |post| %>
-			<li><%= post.created_at.strftime("%m/%d/%Y")%><%= link_to post.title, post %></li>
-		<% end %>
-	</ul> 
+	<div class="col-lg-6">
+		<ul>
+			<% @post.offset(1).each do |post| %>
+				<li>
+				<%= post.created_at.strftime("%m/%d/%Y")%>
+				<%= link_to post.title, post %>
+				</li>
+			<% end %>
+		</ul> 
+	</div>
 </div>
