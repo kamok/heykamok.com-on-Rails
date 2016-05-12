@@ -27,6 +27,10 @@ body{
 $body-bg: #e6e6e6 ;
 $brand-primary: #339933;
 
+span.line {
+  display: inline-block;
+}
+
 /*intro*/
 .intro-section {
 	background-image: asset-url("background-2.jpg");
