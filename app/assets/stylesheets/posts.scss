@@ -5,7 +5,7 @@
 }
 
 #post-view{
-
+br {display:none;}  //This line gets rid of those annoying br tags from the WYSIWYG editor
 }
 
 //Post View Buttons
@@ -27,4 +27,5 @@
 #reading-list{ 
 	padding-left:0px;
 	padding-right:30px;
+	br {display:none;}  //This line gets rid of those annoying br tags from the WYSIWYG editor
 }
