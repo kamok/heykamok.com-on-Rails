@@ -1,11 +1,9 @@
 <div id ="adjust-down" class= "container">
 	<h1>Toys</h1>
 
+	<p>Your ip address is <%= @client_ip %>. </p>
+	<%= Weatherman.current_temp %>
 
-	<p>It is currently X degrees F in ___ .</p>
-	<%= request.remote_ip %>
-	<%= Weatherman.current_temp(47.674,-122.1215) %>
-	
 
 		<table id = "random_table">
 		  <tr>

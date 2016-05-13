@@ -3,9 +3,11 @@ class PagesController < ApplicationController
   end
 
   def toys
+    @client_ip = request.remote_ip
   end
 
   def blog
     @post = Post.all
   end
+
 end
