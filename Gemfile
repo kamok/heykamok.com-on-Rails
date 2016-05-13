@@ -39,3 +39,5 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'pg'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 gem 'browser'
+gem 'forecast_io'
+gem 'figaro'
