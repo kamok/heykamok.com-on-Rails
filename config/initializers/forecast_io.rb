@@ -1,7 +1,6 @@
 require 'forecast_io'
 require 'openssl'
 require 'open-uri'
-require 'JSON'
 require 'csv'
 
 ForecastIO.configure do |config|    
