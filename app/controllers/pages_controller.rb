@@ -3,11 +3,14 @@ class PagesController < ApplicationController
   end
 
   def toys
-    @client_ip = request.remote_ip
+    @current_temp = Weatherman.current_temp(cookies[:client_ip])
   end
 
   def blog
     @post = Post.all
   end
 
+  private
+
+  
 end
