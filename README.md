@@ -6,7 +6,8 @@ Todo :
 
 
  2. Weather app
- 		c. Get the icon the page
+ 		b. Get summary currently
+		a. Get the icon the page
 
  A. Finish Services section
  B. Transfer data from wordpress into my blog.

@@ -8,8 +8,9 @@ class Weatherman < ActiveRecord::Base
     current_temp = get_current_temp(@forecast)
     max_temp_today = get_max_temp_today(@forecast)
     min_temp_today = get_min_temp_today(@forecast)
+    summary_today = get_summary_today(@forecast)
 
-    [current_temp, max_temp_today, min_temp_today]
+    [current_temp, max_temp_today, min_temp_today, summary_today]
   end
 
   private 
@@ -37,6 +38,10 @@ class Weatherman < ActiveRecord::Base
 
   def self.get_min_temp_today(forecast)
     forecast.daily.data[0]["temperatureMin"]
+  end
+
+  def self.get_summary_today(forecast)
+    forecast.currently["summary"]
   end
 
 end
