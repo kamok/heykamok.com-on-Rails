@@ -6,7 +6,6 @@ class Weatherman < ActiveRecord::Base
     lng = JSON.parse(ip_metadata)["lon"]
 
     ForecastIO.forecast(lat, lng).currently["temperature"]
-    
   end
 
   private 
