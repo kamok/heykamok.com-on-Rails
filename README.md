@@ -6,7 +6,6 @@ Todo :
 
 
  2. Weather app
- 		a. Get the max and min on the toys page while using only one api call per visit.
  		b. Section out the weather with the clicky_table toy and make it nice and pretty
  		c. Get the icon the page
 

@@ -1,19 +1,57 @@
-<div id ="adjust-down" class= "container">
-	<h1>Toys</h1>
+	<!-- Toy Intro -->
+	<section class="toy-intro-section">
+	    <div class="container">
+	      <div class="row">
+	        <div class="col-lg-12">
 
-	<p>Your ip address is <%= cookies[:client_ip] %>. </p>
-	<p>Your current temperature is about <%= @weather_array[0] %> degrees.</p>
-	<p>Your max temperature for today is <%= @weather_array[1] %> degrees.</p>
-	<p>Your min temperature for today is <%= @weather_array[2] %> degrees.</p>
+	        <h1>Toys</h1>
 
-		<table id = "random_table">
-		  <tr>
-		    <td></td>
-		    <td></td> 
-		    <td></td>
-		    <td></td>
-		    <td></td> 
-		  </tr>
-		</table>
+					<p>Below are a few selection of my favorite side projects.</p>
+
+	        </div>
+	      </div>
+	    </div>
+	  </section>
+
+	<!-- Weather Toy -->
+	<section id="toy-weather" class="weather-section">
+	    <div class="container">
+	      <div class="row">
+	        <div class="col-lg-12">
+
+	        <h1>Weather Forecast</h1>
+
+					<p>Your ip address is <%= cookies[:client_ip] %>. </p>
+					<p>Your current temperature is about <%= @weather_array[0] %> degrees.</p>
+					<p>Your max temperature for today is <%= @weather_array[1] %> degrees.</p>
+					<p>Your min temperature for today is <%= @weather_array[2] %> degrees.</p>
+
+	        </div>
+	      </div>
+	    </div>
+	  </section>
+
+	<!-- Clicky Table Toy -->
+  <section id="toy-table" class="table-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+
+        <table id = "random_table">
+				  <tr>
+				    <td></td>
+				    <td></td> 
+				    <td></td>
+				    <td></td>
+				    <td></td> 
+				  </tr>
+				</table>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+	
 		
 </div>
