@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   end
 
   def toys
-    @current_temp = Weatherman.current_temp(cookies[:client_ip])
+    @weather_array = Weatherman.get_weather(cookies[:client_ip])
   end
 
   def blog

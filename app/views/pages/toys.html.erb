@@ -2,8 +2,9 @@
 	<h1>Toys</h1>
 
 	<p>Your ip address is <%= cookies[:client_ip] %>. </p>
-	<p>Your current temperature is about <%= @current_temp %> degrees F.</p>
-
+	<p>Your current temperature is about <%= @weather_array[0] %> degrees.</p>
+	<p>Your max temperature for today is <%= @weather_array[1] %> degrees.</p>
+	<p>Your min temperature for today is <%= @weather_array[2] %> degrees.</p>
 
 		<table id = "random_table">
 		  <tr>

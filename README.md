@@ -6,11 +6,9 @@ Todo :
 
 
  2. Weather app
- 	- Takes the current IP address. Convery to geocode. Then use geocode to get weather data. Display.
- 3. Redo the so called "About" page to "Little toys"
- 	- redo click table thingy
- 	- add RoR?
-
+ 		a. Get the max and min on the toys page while using only one api call per visit.
+ 		b. Section out the weather with the clicky_table toy and make it nice and pretty
+ 		c. Get the icon the page
 
  A. Finish Services section
  B. Transfer data from wordpress into my blog.
@@ -21,3 +19,4 @@ Todo :
  1. Make the Blog prettier
  2. Animation -animate rails gem
  3. Use phi equation to make a mini-game with 2 choices to collect statictical data.
+ 4. Add RoR to Toys?
