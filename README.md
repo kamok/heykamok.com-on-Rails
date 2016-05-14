@@ -6,7 +6,7 @@ Todo :
 
 
  2. Weather app
- 		b. Section out the weather with the clicky_table toy and make it nice and pretty
+ 		b. Do some fucking wireframe
  		c. Get the icon the page
 
  A. Finish Services section

@@ -15,21 +15,27 @@
 
 	<!-- Weather Toy -->
 	<section id="toy-weather" class="weather-section">
-	    <div class="container">
-	      <div class="row">
-	        <div class="col-lg-12">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
 
-	        <h1>Weather Forecast</h1>
+        <h1>Weather Forecast</h1>
+        <p>Your ip address is <%= cookies[:client_ip] %>. </p>
 
-					<p>Your ip address is <%= cookies[:client_ip] %>. </p>
-					<p>Your current temperature is about <%= @weather_array[0] %> degrees.</p>
-					<p>Your max temperature for today is <%= @weather_array[1] %> degrees.</p>
-					<p>Your min temperature for today is <%= @weather_array[2] %> degrees.</p>
+				<div class="circle">
+			    <span>
+				    <div id="toy-current-temp">
+							<%= @weather_array[0].to_i %>°
+						</div>
+						<div id="toy-max-min-temp-today">
+							Max: <%= @weather_array[1].to_i %>° | Min: <%= @weather_array[2].to_i %>°
+						</div>
+			    </span>
+			  </div>
 
-	        </div>
-	      </div>
-	    </div>
-	  </section>
+      </div>
+    </div>
+  </section>
 
 	<!-- Clicky Table Toy -->
   <section id="toy-table" class="table-section">

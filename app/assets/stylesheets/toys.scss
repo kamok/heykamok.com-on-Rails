@@ -12,6 +12,32 @@
     background: #fff;
 }
 
+.circle {
+  background: #339933;
+  border-radius:50%;
+  color: white;
+  display:table;
+  height: 220px;
+  width: auto;
+  margin:0 auto;
+    span {
+    display:table-cell;
+    vertical-align:middle;
+    height:220px;
+    width:220px;
+    text-align:center;
+    padding: 0 15px;
+    	#toy-current-temp{
+    		margin-top: -20px;
+    		font-style: bold;
+    		font-size: 3.5em;
+    	}
+    	#toy-max-min-temp-today{
+    		font-size: 1em;
+    	}
+	}
+}
+
 .table-section {
     height: 750px;
     padding-top: 50px;
@@ -21,7 +47,7 @@
 
 #random_table {
   margin: auto;
-	width:500px; 
+	width:350px; 
 	border: 1;
 	border-spacing: 5px;
 	tr td {
