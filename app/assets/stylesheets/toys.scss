@@ -20,6 +20,7 @@
   height: 220px;
   width: auto;
   margin:0 auto;
+	font-family: 'Open Sans', sans-serif;
     span {
     display:table-cell;
     vertical-align:middle;
@@ -28,12 +29,15 @@
     text-align:center;
     padding: 0 15px;
     	#toy-current-temp{
-    		margin-top: -20px;
+    		margin-top: -5px;
     		font-style: bold;
-    		font-size: 3.5em;
+    		font-size: 4.5em;
+    		margin-left:15px;
+    		span{
+    		}
     	}
     	#toy-max-min-temp-today{
-    		font-size: 1em;
+    		font-size: 1.25em;
     	}
 	}
 }

@@ -6,7 +6,6 @@ Todo :
 
 
  2. Weather app
- 		b. Do some fucking wireframe
  		c. Get the icon the page
 
  A. Finish Services section
