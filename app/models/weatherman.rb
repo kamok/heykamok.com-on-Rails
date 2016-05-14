@@ -1,10 +1,12 @@
 class Weatherman < ActiveRecord::Base
 
-  def self.get_weather(client_ip)
-    geocode_array = get_lat_and_lng(client_ip)
+  def self.prepare_weather(client_ip)
+    geocode_array = prepare_geocode(client_ip)
+    get_weather_data(geocode_array)
+    store_weather
+  end
 
-    @forecast = get_weather_data(geocode_array)
-
+  def self.store_weather
     current_temp = get_current_temp(@forecast)
     max_temp_today = get_max_temp_today(@forecast)
     min_temp_today = get_min_temp_today(@forecast)
@@ -15,7 +17,7 @@ class Weatherman < ActiveRecord::Base
 
   private 
 
-  def self.get_lat_and_lng(client_ip)
+  def self.prepare_geocode(client_ip)
     ip_metadata = open("http://ip-api.com/json/#{client_ip}").read
     lat = JSON.parse(ip_metadata)["lat"]
     lng = JSON.parse(ip_metadata)["lon"]
@@ -25,7 +27,7 @@ class Weatherman < ActiveRecord::Base
   def self.get_weather_data(geocode_array)
     lat = geocode_array[0]
     lng = geocode_array[1]
-    ForecastIO.forecast(lat, lng)
+    @forecast = ForecastIO.forecast(lat, lng)
   end
 
   def self.get_current_temp(forecast)
