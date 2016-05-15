@@ -7,12 +7,17 @@ class Weatherman < ActiveRecord::Base
   end
 
   def self.store_weather
-    current_temp = get_current_temp(@forecast)
-    max_temp_today = get_max_temp_today(@forecast)
-    min_temp_today = get_min_temp_today(@forecast)
-    summary_today = get_summary_today(@forecast)
+    weather_parameters = ["current_temp", "max_temp_today", "min_temp_today",
+     "summary_today"]
+     
+    stored_weather = []
 
-    [current_temp, max_temp_today, min_temp_today, summary_today]
+    weather_parameters.each do |parameter|
+      parameter = "get_" + parameter
+      stored_weather << Weatherman.send(parameter, @forecast)
+    end
+
+    return stored_weather
   end
 
   private 
