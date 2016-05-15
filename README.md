@@ -7,7 +7,7 @@ Todo :
 
  2. Weather app
  		. Get summary for everyone.
-		. Change the font family of the entire section to Open Sans.
+ 		. Get COOL backgrounds pictures.
 
  A. Finish Services section
  B. Transfer data from wordpress into my blog.
