@@ -16,6 +16,7 @@
 	<!-- Weather Toy -->
 	<section id="toy-weather" class="weather-section">
     <div class="container">
+
       <div class="row">
         <div class="col-lg-12">
 
@@ -35,44 +36,64 @@
 				  </div><!-- circle -->
 				</div><!-- col-lg-12 -->
 			</div><!-- row -->
-
+      
+      
 			<div class="row" id="weather-divider">
+			<!-- Day0 -->
 			 	<div class="col-lg-3">
 			 		<div class="weather-box">
-			 			<div class="max-min-temp">
+
+			 			<div class="toy-weather-day">
 			 				<%= @weather_array[10] %>
 			 			</div>
+
 			 			<div class="weather-icon">
-			 				<%= @weather_array[14] %>
+			 				<%= wi_icon(@weather_array[14]) %>
 			 			</div>
-			 			<b><%= @weather_array[1].to_i %>°</b> / <%= @weather_array[2].to_i %>°
+
+			 			<div class="max-min-temp">
+			 				<b><%= @weather_array[1].to_i %>°</b> / <%= @weather_array[2].to_i %>°
+			 			</div>
+
 			 		</div>
 			 	</div>
 
+			 	<!-- Day1 -->
 			 	<div class="col-lg-3">
 			 		<div class="weather-box">
-			 			<div class="max-min-temp">
+
+			 			<div class="toy-weather-day">
 			 				<%= @weather_array[11] %>
 			 			</div>
+
 			 			<div class="weather-icon">
 			 				<%= @weather_array[15] %>
 			 			</div>
-			 			<b><%= @weather_array[3].to_i %>°</b> / <%= @weather_array[4].to_i %>°
+
+			 			<div class="max-min-temp">
+			 				<b><%= @weather_array[3].to_i %>°</b> / <%= @weather_array[4].to_i %>°
+			 			</div>
 			 		</div>
 			 	</div>
 
+			 	<!-- Day2 -->
 			 	<div class="col-lg-3">
 				 	<div class="weather-box">
+
 				 		<div class="max-min-temp">
 			 				<%= @weather_array[12] %>
 			 			</div>
+
 			 			<div class="weather-icon">
 			 				<%= @weather_array[16] %>
 			 			</div>
+
+			 			<div class="max-min-temp">
 			 			<b><%= @weather_array[5].to_i %>°</b> / <%= @weather_array[6].to_i %>°
 				 	</div>
 			 	</div>
 
+			 	<!-- Day3 -->
 			 	<div class="col-lg-3">
 			 		<div class="weather-box">
 			 			<div class="max-min-temp">

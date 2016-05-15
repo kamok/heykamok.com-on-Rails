@@ -6,9 +6,8 @@ Todo :
 
 
  2. Weather app
- 		. Get and translate date to "Today/Tonight + 5/14", "Tomorrow 5/15", etc.
- 		. Get icon text and summary for everyone.
-		. Translate icon text to weather icons.
+    . Translate icon text to weather icons.
+ 		. Get summary for everyone.
 		. Change the font family of the entire section to Open Sans.
 
  A. Finish Services section

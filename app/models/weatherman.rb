@@ -102,19 +102,43 @@ class Weatherman < ActiveRecord::Base
   end
 
   def self.get_icon_day0(forecast)
-    forecast.daily.data[0]["icon"]
+    icon = forecast.currently["icon"]
+    translate_icon_verbage(icon)
   end
 
   def self.get_icon_day1(forecast)
-    forecast.daily.data[1]["icon"]
+    icon = forecast.daily.data[1]["icon"]
+    translate_icon_verbage(icon)
   end
 
   def self.get_icon_day2(forecast)
-    forecast.daily.data[2]["icon"]
+    icon = forecast.daily.data[2]["icon"]
+    translate_icon_verbage(icon)
   end
 
   def self.get_icon_day3(forecast)
-    forecast.daily.data[3]["icon"]
+    icon = forecast.daily.data[3]["icon"]
+    translate_icon_verbage(icon)
   end
 
+  def self.translate_icon_verbage(forecast_icon)
+    forecast_to_wi_icon = {
+      "clear-day":           "day-sunny",
+      "clear-night":         "night-clear",
+      "rain":                "rain",
+      "snow":                "snow",
+      "sleet":               "hail",
+      "wind":                "strong-wind",
+      "fog":                 "fog",
+      "cloudy":              "cloudy",
+      "partly-cloudy-day":   "day-cloudy",
+      "partly-cloudy-night": "night-cloudy"
+    }
+
+    if forecast_to_wi_icon[forecast_icon.to_sym]
+      forecast_to_wi_icon[forecast_icon.to_sym]
+    else
+      "wi-na"
+    end
+  end
 end
