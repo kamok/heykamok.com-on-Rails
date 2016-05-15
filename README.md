@@ -6,6 +6,7 @@ Todo :
 
 
  2. Weather app
+ 		. Get date.
  		. Get summary for everyone.
  		. Get COOL backgrounds pictures.
 
