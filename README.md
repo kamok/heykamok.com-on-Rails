@@ -6,7 +6,6 @@ Todo :
 
 
  2. Weather app
-    . Translate icon text to weather icons.
  		. Get summary for everyone.
 		. Change the font family of the entire section to Open Sans.
 

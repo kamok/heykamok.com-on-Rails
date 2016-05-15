@@ -6,10 +6,11 @@
 }
 
 .weather-section {
-    height: 750px;
+    min-height: 750px;
     padding-top: 50px;
     text-align: center;
     background: #fff;
+    overflow: hidden;
 }
 
 .circle {
@@ -49,6 +50,9 @@
 
 .weather-box{
     background-color: #eee;
+    max-width: 300px;
+    margin-left:auto;
+    margin-right:auto;
     .weather-icon{
         margin-top: 10px;
         font-size: 3.5em;
