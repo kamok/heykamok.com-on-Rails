@@ -11,7 +11,8 @@ class Weatherman < ActiveRecord::Base
     ["current_temp", "max_temp_day0", "min_temp_day0",
      "max_temp_day1", "min_temp_day1", "max_temp_day2",
      "min_temp_day2", "max_temp_day3", "min_temp_day3",
-     "summary_day0"]
+     "summary_day0", "day_day0", "day_day1",
+     "day_day2", "day_day3", ]
 
     stored_weather = []
 
@@ -77,4 +78,27 @@ class Weatherman < ActiveRecord::Base
   def self.get_summary_day0(forecast)
     forecast.currently["summary"]
   end
+
+  def self.get_day_day0(forecast)
+    Time.at(forecast.daily.data[0]["time"]).strftime("%A")
+  #   UNIX_time_now = forecast.currently["time"]
+  #   if time_now < 3PM 
+  #     "Today"
+  #   else 
+  #     "Tonight"
+  #   end
+  end
+
+  def self.get_day_day1(forecast)
+    Time.at(forecast.daily.data[1]["time"]).strftime("%A")
+  end
+
+  def self.get_day_day2(forecast)
+    Time.at(forecast.daily.data[2]["time"]).strftime("%A")
+  end
+
+  def self.get_day_day3(forecast)
+    Time.at(forecast.daily.data[3]["time"]).strftime("%A")
+  end
+
 end

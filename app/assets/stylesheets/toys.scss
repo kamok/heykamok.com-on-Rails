@@ -36,7 +36,7 @@
     		span{
     		}
     	}
-    	#toy-max-min-temp-today{
+    	#toy-max-min-temp-current{
             margin-top: 5px;
     		// font-size: 1.25em;
     	}
@@ -48,7 +48,10 @@
 }
 
 .weather-box{
-    background-color: grey;
+    background-color: #eee;
+    .toy-max-min-temp{
+
+    }
 }
 
 .table-section {

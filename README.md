@@ -6,8 +6,10 @@ Todo :
 
 
  2. Weather app
- 		b. Get high and low for everyone.
-		a. Get the icon the page
+ 		. Get and translate date to "Today/Tonight + 5/14", "Tomorrow 5/15", etc.
+ 		. Get icon text and summary for everyone.
+		. Translate icon text to weather icons.
+		. Change the font family of the entire section to Open Sans.
 
  A. Finish Services section
  B. Transfer data from wordpress into my blog.
