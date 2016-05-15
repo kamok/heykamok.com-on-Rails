@@ -6,7 +6,7 @@ Todo :
 
 
  2. Weather app
- 		b. Get summary currently
+ 		b. Get high and low for everyone.
 		a. Get the icon the page
 
  A. Finish Services section
