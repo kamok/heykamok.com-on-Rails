@@ -16,13 +16,18 @@ class Weatherman < ActiveRecord::Base
      "date_day1", "date_day2", "date_day3",             #15-17
      "icon_day0", "icon_day1", "icon_day2",             #18-20
      "icon_day3", "summary_day0", "summary_day1",       #21-23   
-     "summary_day2", "summary_day3"]                    #24-25                                       
+     "summary_day2", "summary_day3", "city_and_country"]#24-26                                       
 
     stored_weather = []
 
     weather_parameters.each do |parameter|
-      parameter = "get_" + parameter
-      stored_weather << Weatherman.send(parameter, @forecast)
+      if parameter != "city_and_country"
+        parameter = "get_" + parameter
+        stored_weather << Weatherman.send(parameter, @forecast)
+      else
+        parameter = "get_" + parameter
+        stored_weather << Weatherman.send(parameter)
+      end
     end
 
     return stored_weather
@@ -34,7 +39,10 @@ class Weatherman < ActiveRecord::Base
     ip_metadata = open("http://ip-api.com/json/#{client_ip}").read
     lat = JSON.parse(ip_metadata)["lat"]
     lng = JSON.parse(ip_metadata)["lon"]
-    [lat, lng]
+    city_and_country = JSON.parse(ip_metadata)["city"] + ", " + JSON.parse(ip_metadata)["country"]
+
+    @geocode_array = [lat, lng, city_and_country]
+    return @geocode_array
   end
 
   def self.get_weather_data(geocode_array)
@@ -175,6 +183,10 @@ class Weatherman < ActiveRecord::Base
 
   def self.get_summary_day3(forecast)
     forecast.daily.data[3]["summary"]
+  end
+
+  def self.get_city_and_country
+    @geocode_array[2]
   end
 
 end

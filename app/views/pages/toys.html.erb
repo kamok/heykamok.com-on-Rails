@@ -21,7 +21,8 @@
         <div class="col-lg-12">
 
 	        <h1>Weather Forecast</h1>
-	        <p>Your ip address is <%= cookies[:client_ip] %>. </p>
+	        <p>Your ip address is <%= cookies[:client_ip] %></p>
+	        <p>...which means you're in <%= @weather_array.last %></p>
 
 					<div class="circle">
 				    <span>
