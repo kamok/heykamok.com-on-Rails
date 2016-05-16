@@ -4,11 +4,11 @@ by [Ka Mok](http://heykamok.com)
 
 Todo :
 
-
- 2. Weather app
- 		. Get COOL backgrounds pictures.
-
  A. Finish Services section
+ 	1. Thesuperbowl --add pic
+ 	2. Weather  --add pic
+ 	3. ???
+ 	4. "check out github for more"
  B. Transfer data from wordpress into my blog.
  C. Delete current heykamok.com and integrate new website with domain.
 
@@ -18,3 +18,4 @@ Todo :
  2. Animation -animate rails gem
  3. Use phi equation to make a mini-game with 2 choices to collect statictical data.
  4. Add RoR to Toys?
+ 5. Cool background for front page of weather.

@@ -49,11 +49,15 @@
     color:#339933;
 }
 
-.services-section {
+.projects-section {
     height: 750px;
     padding-top: 50px;
     text-align: center;
     background: #fff;
+}
+
+.project_links{
+    
 }
 
 .contact-section {
