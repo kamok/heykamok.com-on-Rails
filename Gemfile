@@ -26,8 +26,9 @@ group :development, :test do
 end
 
 group :test do
-  gem 'capybara'
+  gem 'capybara', '~> 2.7.1'
   gem 'factory_girl_rails', '~> 4.2.1'
+  gem 'byebug'
 end
 
 #custom gems

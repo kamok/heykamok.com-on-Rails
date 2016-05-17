@@ -1,5 +1,12 @@
 require 'rails_helper'
 
-RSpec.describe PostsController, type: :controller do
-
+describe PostsController do
+  describe '#create' do
+    it 'saves a new post in the database' do
+      expect {FactoryGirl.create(:post)}.to
+      change(Post, :count).by 1
+    end
+  end
 end
+
+

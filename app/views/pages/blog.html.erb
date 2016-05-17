@@ -7,10 +7,10 @@
 	<% end %>
 
 	<div class="col-lg-6" id='reading-list'>
-		<h3><%= @post.first.title %></h3>
+		<h3><%= @reading_list.title %></h3>
 
-		<%= simple_format@post.first.body %>
-		Last updated on: <%= @post.first.updated_at.strftime("%m/%d/%Y")%>
+		<%= simple_format @reading_list.body %>
+		Last updated on: <%= pretty_updated_at(@post) %>
 	</div>
 
 	<div class="col-lg-6">

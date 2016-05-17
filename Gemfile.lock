@@ -54,6 +54,7 @@ GEM
       railties (>= 3.0)
     browser (2.1.0)
     builder (3.2.2)
+    byebug (8.2.5)
     capybara (2.7.1)
       addressable
       mime-types (>= 1.16)
@@ -268,7 +269,8 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.6)
   bootstrap-wysihtml5-rails
   browser
-  capybara
+  byebug
+  capybara (~> 2.7.1)
   coffee-rails (~> 4.1.0)
   coffee-script-source (= 1.8.0)
   color-generator

@@ -4,6 +4,11 @@ by [Ka Mok](http://heykamok.com)
 
 Todo :
 
+-seperate reading list from blog
+-fix spec 
+
+*Write tests for 
+	. Weather 
  A. Finish Services section
  	3. Make snake
  1. Make the Blog prettier

@@ -20,6 +20,7 @@ class PostsController < ApplicationController
   end
 
   def show
+    @reading_list = Post.reading_list
   end
 
   def edit
