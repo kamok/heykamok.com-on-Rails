@@ -22,16 +22,16 @@
 
 	        <h1>Weather Forecast</h1>
 	        <p>Your ip address is <%= cookies[:client_ip] %></p>
-	        <p>...which means you're in <%= @weather_array.last %></p>
+	        <p>...which means you're in <%= @weather_array[3] %></p>
 
 					<div class="circle">
 				    <span>
 					    <div id="toy-current-temp">
 								<%= @weather_array[0].to_i %>°
 							</div>
-							<%= @weather_array[9] %>
+							<%= @weather_array[1] %>
 							<div id="toy-max-min-temp-current">
-								<%= @weather_array[0].to_i %>° / <%= @weather_array[4].to_i %>°
+							<b><%= @weather_array[8].to_i %>°</b> / <%= @weather_array[4].to_i %>°
 							</div>
 				    </span>
 				  </div><!-- circle -->
@@ -45,20 +45,20 @@
 			 		<div class="weather-box">
 
 			 			<div class="toy-weather-day">
-			 				<%= @weather_array[0] %><br>
-			 				<b><%= @weather_array[11] %></b>
+			 				<%= @weather_array[2] %><br>
+			 				<b><%= @weather_array[15] %></b>
 			 			</div>
 
 			 			<div class="weather-icon">
-			 				<%= wi_icon(@weather_array[15]) %>
+			 				<%= wi_icon(@weather_array[19]) %>
 			 			</div>
 
 			 			<div class="max-min-temp">
-			 				<%= @weather_array[1].to_i %>° / <%= @weather_array[5].to_i %>°
+			 				<%= @weather_array[8].to_i %>° / <%= @weather_array[4].to_i %>°
 			 			</div>
 
 			 			<div class="weather-summary">
-			 				<%= @weather_array %>
+			 				<%= @weather_array[23] %>
 			 			</div>
 
 			 		</div>
@@ -69,20 +69,20 @@
 			 		<div class="weather-box">
 
 			 			<div class="toy-weather-day">
-			 				<%= @weather_array[8] %><br> 
-			 				<b><%= @weather_array[12] %></b>
+			 				<%= @weather_array[12] %><br> 
+			 				<b><%= @weather_array[16] %></b>
 			 			</div>
 
 			 			<div class="weather-icon">
-			 				<%= wi_icon(@weather_array[16]) %>
+			 				<%= wi_icon(@weather_array[20]) %>
 			 			</div>
 
 						<div class="max-min-temp">
-			 				<%= @weather_array[2].to_i %>° / <%= @weather_array[6].to_i %>°
+			 				<%= @weather_array[9].to_i %>° / <%= @weather_array[5].to_i %>°
 			 			</div>
 
 			 			<div class="weather-summary">
-			 				<%= @weather_array[20] %>
+			 				<%= @weather_array[24] %>
 			 			</div>
 
 			 			
@@ -94,20 +94,20 @@
 				 	<div class="weather-box">
 
 				 		<div class="toy-weather-day">
-			 				<%= @weather_array[9] %><br>
-			 				<b><%= @weather_array[13] %></b>
+			 				<%= @weather_array[13] %><br>
+			 				<b><%= @weather_array[17] %></b>
 			 			</div>
 
 			 			<div class="weather-icon">
-			 				<%= wi_icon(@weather_array[17]) %>
+			 				<%= wi_icon(@weather_array[21]) %>
 			 			</div>
 
 			 			<div class="max-min-temp">
-			 				<%= @weather_array[4].to_i %>° / <%= @weather_array[7].to_i %>°
+			 				<%= @weather_array[10].to_i %>° / <%= @weather_array[6].to_i %>°
 			 			</div>
 
 			 			<div class="weather-summary">
-			 				<%= @weather_array[21] %>
+			 				<%= @weather_array[25] %>
 			 			</div>
 			 
 				 	</div>
@@ -118,20 +118,20 @@
 			 		<div class="weather-box">
 
 			 			<div class="toy-weather-day">
-			 				<%= @weather_array[10] %><br>
-			 				<b><%= @weather_array[14] %></b>
+			 				<%= @weather_array[14] %><br>
+			 				<b><%= @weather_array[18] %></b>
 			 			</div>
 
 			 			<div class="weather-icon">
-			 				<%= wi_icon(@weather_array[18]) %>
+			 				<%= wi_icon(@weather_array[22]) %>
 			 			</div>
 
 			 			<div class="max-min-temp">
-			 				<%= @weather_array[7].to_i %>° / <%= @weather_array[8].to_i %>°
+			 				<%= @weather_array[11].to_i %>° / <%= @weather_array[7].to_i %>°
 			 			</div>
 
 			 			<div class="weather-summary">
-			 				<%= @weather_array[22] %>
+			 				<%= @weather_array[26] %>
 			 			</div>
 			 	
 			 		</div>
@@ -167,3 +167,4 @@
 	
 		
 </div>
+

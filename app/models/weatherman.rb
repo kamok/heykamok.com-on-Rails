@@ -1,15 +1,15 @@
 class Weatherman < ActiveRecord::Base
 
   NON_REPEATING_WEATHER_PARAMETERS = 
-  ["current_temp", "current_summary", "get_day_today", "city_and_country" ]
+  ["current_temp", "current_summary", "get_day_today", "city_and_country"] #0-3
 
   REPEATING_WEATHER_PARAMETERS = 
-  ["min_temp_day0", "min_temp_day1", "min_temp_day2", "min_temp_day3", 
-   "max_temp_day0", "max_temp_day1", "max_temp_day2", "max_temp_day3", 
-   "day_day1", "day_day2", "day_day3", 
-   "date_day0", "date_day1", "date_day2", "date_day3",             
-   "icon_day0", "icon_day1", "icon_day2", "icon_day3", 
-   "summary_day0", "summary_day1", "summary_day2", "summary_day3"]
+  ["min_temp_day0", "min_temp_day1", "min_temp_day2", "min_temp_day3",     #4-7
+   "max_temp_day0", "max_temp_day1", "max_temp_day2", "max_temp_day3",     #8-11
+   "day_day1", "day_day2", "day_day3",                                     #12-14
+   "date_day0", "date_day1", "date_day2", "date_day3",                     #15-18
+   "icon_day0", "icon_day1", "icon_day2", "icon_day3",                     #19-22
+   "summary_day0", "summary_day1", "summary_day2", "summary_day3"]         #23-26
 
   def self.prepare_weather(client_ip)
     prepare_geocode(client_ip)
@@ -36,23 +36,20 @@ class Weatherman < ActiveRecord::Base
     end
 
     REPEATING_WEATHER_PARAMETERS.each do |parameter|
-      if parameter.include?("min_temp_day") 
+
         day = parameter[-1].to_i
+
+      if parameter.include?("min_temp_day") 
         stored_weather << Weatherman.get_min_temp_for_day(day)
       elsif parameter.include?("max_temp_day") 
-        day = parameter[-1].to_i
         stored_weather << Weatherman.get_max_temp_for_day(day)
       elsif parameter.include?("day_day") 
-        day = parameter[-1].to_i
         stored_weather << Weatherman.get_day_for_day(day)
       elsif parameter.include?("date_day") 
-        day = parameter[-1].to_i
         stored_weather << Weatherman.get_date_for_day(day)
       elsif parameter.include?("icon_day") 
-        day = parameter[-1].to_i
         stored_weather << Weatherman.get_icon_for_day(day)
       else parameter.include?("summary_day")
-        day = parameter[-1].to_i
         stored_weather << Weatherman.get_summary_for_day(day)
       end
     end
