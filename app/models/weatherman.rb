@@ -1,154 +1,113 @@
 class Weatherman < ActiveRecord::Base
 
-  WEATHER_PARAMETERS = 
-    ["current_temp", "max_temp_day0", "min_temp_day0",  #0-2
-     "max_temp_day1", "min_temp_day1", "max_temp_day2", #3-5
-     "min_temp_day2", "max_temp_day3", "min_temp_day3", #6-8
-     "current_summary_day0", "day_day0", "day_day1",    #9-11
-     "day_day2", "day_day3", "date_day0",               #12-14
-     "date_day1", "date_day2", "date_day3",             #15-17
-     "icon_day0", "icon_day1", "icon_day2",             #18-20
-     "icon_day3", "summary_day0", "summary_day1",       #21-23   
-     "summary_day2", "summary_day3", "city_and_country"]
+  NON_REPEATING_WEATHER_PARAMETERS = 
+  ["current_temp", "current_summary", "get_day_today", "city_and_country" ]
+
+  REPEATING_WEATHER_PARAMETERS = 
+  ["min_temp_day0", "min_temp_day1", "min_temp_day2", "min_temp_day3", 
+   "max_temp_day0", "max_temp_day1", "max_temp_day2", "max_temp_day3", 
+   "day_day1", "day_day2", "day_day3", 
+   "date_day0", "date_day1", "date_day2", "date_day3",             
+   "icon_day0", "icon_day1", "icon_day2", "icon_day3", 
+   "summary_day0", "summary_day1", "summary_day2", "summary_day3"]
 
   def self.prepare_weather(client_ip)
-    geocode_array = prepare_geocode(client_ip)
-    get_weather_data(geocode_array)
-    store_weather
+    prepare_geocode(client_ip)
+    get_weather_data
+    parse_and_store_weather_data
   end
 
-  def self.store_weather                               
+  private 
+
+  def self.parse_and_store_weather_data                              
 
     stored_weather = []
 
-    WEATHER_PARAMETERS.each do |parameter|
-      if parameter.include?("min_temp") 
-        day = parameter[-1].to_i
-        Weatherman.get_min_temp_for_day(day)
-      elsif 
+    NON_REPEATING_WEATHER_PARAMETERS.each do |parameter|
+      if parameter == "current_temp"
+        stored_weather << Weatherman.get_current_temp
+      elsif parameter == "current_summary"
+        stored_weather << Weatherman.get_current_summary
+      elsif parameter == "get_day_today"
+        stored_weather << Weatherman.get_day_today
+      elsif parameter == "city_and_country"
+        stored_weather << @city_and_country
+      end
+    end
 
-      # if parameter != "city_and_country"
-      #   parameter = "get_" + parameter
-      #   stored_weather << Weatherman.send(parameter, @forecast)
-      # else
-      #   parameter = "get_" + parameter
-      #   stored_weather << Weatherman.send(parameter)
-      # end
+    REPEATING_WEATHER_PARAMETERS.each do |parameter|
+      if parameter.include?("min_temp_day") 
+        day = parameter[-1].to_i
+        stored_weather << Weatherman.get_min_temp_for_day(day)
+      elsif parameter.include?("max_temp_day") 
+        day = parameter[-1].to_i
+        stored_weather << Weatherman.get_max_temp_for_day(day)
+      elsif parameter.include?("day_day") 
+        day = parameter[-1].to_i
+        stored_weather << Weatherman.get_day_for_day(day)
+      elsif parameter.include?("date_day") 
+        day = parameter[-1].to_i
+        stored_weather << Weatherman.get_date_for_day(day)
+      elsif parameter.include?("icon_day") 
+        day = parameter[-1].to_i
+        stored_weather << Weatherman.get_icon_for_day(day)
+      else parameter.include?("summary_day")
+        day = parameter[-1].to_i
+        stored_weather << Weatherman.get_summary_for_day(day)
+      end
     end
 
     stored_weather
   end
 
-  private 
-
   def self.prepare_geocode(client_ip)
     ip_metadata = open("http://ip-api.com/json/#{client_ip}").read
-    lat = JSON.parse(ip_metadata)["lat"]
-    lng = JSON.parse(ip_metadata)["lon"]
-    city_and_country = JSON.parse(ip_metadata)["city"] + ", " + JSON.parse(ip_metadata)["country"]
-
-    @geocode_array = [lat, lng, city_and_country]
-    return @geocode_array
+    @lat = JSON.parse(ip_metadata)["lat"]
+    @lng = JSON.parse(ip_metadata)["lon"]
+    @city_and_country = JSON.parse(ip_metadata)["city"] + ", " + JSON.parse(ip_metadata)["country"]
   end
 
-  def self.get_weather_data(geocode_array)
-    lat = geocode_array[0]
-    lng = geocode_array[1]
-    @forecast = ForecastIO.forecast(lat, lng)
+  def self.get_weather_data
+    @forecast = ForecastIO.forecast(@lat, @lng)
   end
 
-  def self.get_current_temp(forecast)
-    forecast.currently["temperature"]
+  #NON_REPEATING_WEATHER_PARAMETERS
+  def self.get_current_temp
+    @forecast.currently["temperature"]
   end
 
-  def self.get_max_temp_day0(forecast)
-    forecast.daily.data[0]["temperatureMax"]
+  def self.get_current_summary
+    @forecast.currently["summary"]
   end
 
-  def self.get_max_temp_day1(forecast)
-    forecast.daily.data[1]["temperatureMax"]
-  end
-
-  def self.get_max_temp_day2(forecast)
-    forecast.daily.data[2]["temperatureMax"]
-  end
-
-  def self.get_max_temp_day3(forecast)
-    forecast.daily.data[3]["temperatureMax"]
-  end
-
-
-
-
-  def self.get_min_temp_for_day(day)
-    forecast.daily.data[day]["temperatureMin"]
-  end
-
-
-
-
-
-
-
-
-  def self.get_current_summary_day0(forecast)
-    forecast.currently["summary"]
-  end
-
-  def self.get_day_day0(forecast)
-    hour_now = Time.at(forecast.currently["time"]).strftime("%H")
-    if hour_now.to_i < 18
-      return "Today" 
-    else 
-      return "Tonight"      
+  def self.get_day_today
+    hour_now = Time.at(@forecast.currently["time"]).strftime("%H")
+    if hour_now.to_i < 18  ##If < 6PM, then return "Today" 
+      "Today" 
+    else                   ##Else, return "Tonight"
+      "Tonight"     
     end
   end
 
-  def self.get_day_day1(forecast)
-    Time.at(forecast.daily.data[1]["time"]).strftime("%A")
+  #REPEATING_WEATHER_PARAMETERS
+  def self.get_min_temp_for_day(day)
+    @forecast.daily.data[day]["temperatureMin"]
   end
 
-  def self.get_day_day2(forecast)
-    Time.at(forecast.daily.data[2]["time"]).strftime("%A")
+  def self.get_max_temp_for_day(day)
+    @forecast.daily.data[day]["temperatureMax"]
   end
 
-  def self.get_day_day3(forecast)
-    Time.at(forecast.daily.data[3]["time"]).strftime("%A")
+  def self.get_day_for_day(day)
+    Time.at(@forecast.daily.data[day]["time"]).strftime("%A")
   end
 
-  def self.get_date_day0(forecast)
-    date = Time.at(forecast.currently["time"]).strftime("%m/%d")
+  def self.get_date_for_day(day)
+   Time.at(@forecast.daily.data[day]["time"]).strftime("%m/%d")
   end
 
-  def self.get_date_day1(forecast)
-    date = Time.at(forecast.daily.data[1]["time"]).strftime("%m/%d")
-  end
-
-  def self.get_date_day2(forecast)
-    date = Time.at(forecast.daily.data[2]["time"]).strftime("%m/%d")
-  end
-
-  def self.get_date_day3(forecast)
-    date = Time.at(forecast.daily.data[3]["time"]).strftime("%m/%d")
-  end
-
-  def self.get_icon_day0(forecast)
-    icon = forecast.currently["icon"]
-    translate_icon_verbage(icon)
-  end
-
-  def self.get_icon_day1(forecast)
-    icon = forecast.daily.data[1]["icon"]
-    translate_icon_verbage(icon)
-  end
-
-  def self.get_icon_day2(forecast)
-    icon = forecast.daily.data[2]["icon"]
-    translate_icon_verbage(icon)
-  end
-
-  def self.get_icon_day3(forecast)
-    icon = forecast.daily.data[3]["icon"]
+  def self.get_icon_for_day(day)
+    icon = @forecast.daily.data[day]["icon"]
     translate_icon_verbage(icon)
   end
 
@@ -169,28 +128,12 @@ class Weatherman < ActiveRecord::Base
     if forecast_to_wi_icon[forecast_icon.to_sym]
       forecast_to_wi_icon[forecast_icon.to_sym]
     else
-      "wi-na"
+      "na" ##returns the wi-na icon
     end
   end
 
-  def self.get_summary_day0(forecast)
-    forecast.daily.data[0]["summary"]
-  end
-
-  def self.get_summary_day1(forecast)
-    forecast.daily.data[1]["summary"]
-  end
-
-  def self.get_summary_day2(forecast)
-    forecast.daily.data[2]["summary"]
-  end
-
-  def self.get_summary_day3(forecast)
-    forecast.daily.data[3]["summary"]
-  end
-
-  def self.get_city_and_country
-    @geocode_array[2]
+  def self.get_summary_for_day(day)
+    @forecast.daily.data[day]["summary"]
   end
 
 end
