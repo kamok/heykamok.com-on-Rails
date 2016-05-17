@@ -7,7 +7,8 @@ Todo :
  A. Finish Services section
  	1. Thesuperbowl --add pic
  	2. Weather  --add pic
- 	3. ???
+ 	3. Game brainstorm -- 
+ 		- snake?
  	4. "check out github for more"
  B. Transfer data from wordpress into my blog.
  C. Delete current heykamok.com and integrate new website with domain.
