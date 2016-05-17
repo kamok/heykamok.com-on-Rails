@@ -1,0 +1,12 @@
+<% title("Karead") %>
+<div id="adjust-down" class="container">
+	<h1>Ka Reads</h1>
+
+	<div class="col-lg-12" id='reading-list'>
+		<h3><%= @reading_list.title %></h3>
+
+		<%= simple_format @reading_list.body %>
+		Last updated on: <%= pretty_updated_at(@reading_list) %>
+	</div>
+	
+</div>
