@@ -4,8 +4,8 @@ by [Ka Mok](http://heykamok.com)
 
 Todo :
 
--seperate reading list from blog
 -fix spec 
+-use Amazon W3 to host image
 
 *Write tests for 
 	. Weather 
