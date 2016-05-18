@@ -1,20 +1,20 @@
-//WYSIWYG editor
-#post_body {
+//WYSIWYG editor 
+#post_body { //defined by Rails
 	width:100%;
 	height: 500px;
 }
 
-#reading_list_body {
+#reading_list_body { //Why does this only work on this page?
 	width:100%;
 	height: 500px;
-}
-
-#reading-list-view{
-	ul br{display:none;}  
 }
 
 #post-view{
  	ul br {display:none;}
+}
+
+#reading-list-view{
+	ul br{display:none;}  
 }
 
 //Post View Buttons
@@ -32,9 +32,3 @@
 #new-post-button {
 	margin-bottom: 11px; 
 }
-
-// #reading-list{ 
-// 	padding-left:0px;
-// 	padding-right:30px;
-// 	br {display:none;}  //This line gets rid of those annoying br tags from the WYSIWYG editor
-// }
