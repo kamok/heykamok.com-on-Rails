@@ -6,16 +6,9 @@
 		<%= link_to "New Post", new_post_path, class:'btn btn-primary', id:'new-post-button' %>
 	<% end %>
 
-	<div class="col-lg-6" id='reading-list'>
-		<h3><%= @reading_list.title %></h3>
-
-		<%= simple_format @reading_list.body %>
-		Last updated on: <%= pretty_updated_at(@post) %>
-	</div>
-
 	<div class="col-lg-6">
 		<ul>
-			<% @post.where('title != ?', 'Reading List').reverse_order.each do |post| %>
+			<% @post.each do |post| %>
 				<li>
 				<%= post.created_at.strftime("%m/%d/%Y")%>
 				<%= link_to post.title, post %>
