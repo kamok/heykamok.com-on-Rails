@@ -1,5 +1,5 @@
 <% title(@post.title, "Kablog") %>
-<div id="adjust-down" class="container">
+<div id="adjust-down" class="post-container">
 	<div id="blog-view-nav">
 		<ul>
 			<li><%= link_to "Back", blog_path, class:'btn btn-primary'%></li>
@@ -12,9 +12,9 @@
 		</ul>
 	</div>
 
-	<div id="post-view">
-		<h2><%= @post.title %></h2>
+	<h2><%= @post.title %></h2>
+	<i>Last updated on: <%= @post.updated_at.strftime("%m/%d/%Y")%></i>
+	<div id="post-body-view">
 		<%= simple_format(@post.body) %>
-		Last updated on: <%= @post.updated_at.strftime("%m/%d/%Y")%>
 	</div>
 </div>
