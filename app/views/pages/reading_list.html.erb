@@ -1,11 +1,8 @@
 <div id="adjust-down" class="container">
-	<h1>The Reading List</h1>
-
 	<% if user_signed_in? %>
-		<%= link_to "Edit List", edit_reading_list_path, class:'btn btn-primary', id:'new-post-button' %>
+		<%= link_to "Edit List", "reading-list/edit", class:'btn btn-primary'%>
 	<% end %>
-
-	<div class="col-lg-12">
-
-	</div>
+	
+	<h1>The Reading List</h1>
+	<%= @reading_list.body %>
 </div>

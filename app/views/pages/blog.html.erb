@@ -3,7 +3,7 @@
 	<h1>Kablog</h1>
 
 	<% if user_signed_in? %>
-		<%= link_to "New Post", new_post_path, class:'btn btn-primary', id:'new-post-button' %>
+		<%= link_to "New Post", "reading-list/edit", class:'btn btn-primary', id:'new-post-button' %>
 	<% end %>
 
 	<div class="col-lg-6">
