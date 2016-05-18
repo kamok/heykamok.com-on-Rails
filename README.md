@@ -4,7 +4,6 @@ by [Ka Mok](http://heykamok.com)
 
 Todo :
 
--fix spec 
 -use Amazon W3 to host image
 
 *Write tests for 
