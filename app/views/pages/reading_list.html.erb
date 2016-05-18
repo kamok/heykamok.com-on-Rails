@@ -3,6 +3,9 @@
 		<%= link_to "Edit List", "reading-list/edit", class:'btn btn-primary'%>
 	<% end %>
 	
-	<h1>The Reading List</h1>
-	<%= @reading_list.body %>
+	<h1>My Reading List</h1>
+
+	<div id="reading-list-view">
+		<%= simple_format(@reading_list.body) %>
+	</div>
 </div>
