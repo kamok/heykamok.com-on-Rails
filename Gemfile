@@ -39,9 +39,9 @@ gem 'color-generator'
 gem 'devise', '~> 4.0.0'
 gem "font-awesome-rails"
 gem 'friendly_id', '~> 5.1.0'
-gem 'pg'
+gem 'pg', '~> 0.18.4'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-gem 'browser'
-gem 'forecast_io'
-gem 'figaro'
+gem 'browser', '~> 2.1.0'
+gem 'forecast_io', '~> 2.0.0'
+gem 'figaro', '~> 1.1.0'
 gem 'weather-icons-rails'
