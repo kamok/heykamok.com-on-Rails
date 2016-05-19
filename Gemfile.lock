@@ -265,7 +265,7 @@ DEPENDENCIES
   binding_of_caller
   bootstrap-sass (~> 3.3.6)
   bootstrap-wysihtml5-rails
-  browser
+  browser (~> 2.1.0)
   byebug
   capybara (~> 2.7.1)
   coffee-rails (~> 4.1.0)
@@ -273,13 +273,13 @@ DEPENDENCIES
   color-generator
   devise (~> 4.0.0)
   factory_girl_rails (~> 4.2.1)
-  figaro
+  figaro (~> 1.1.0)
   font-awesome-rails
-  forecast_io
+  forecast_io (~> 2.0.0)
   friendly_id (~> 5.1.0)
   guard-rspec
   jquery-rails
-  pg
+  pg (~> 0.18.4)
   rails (= 4.2.5.1)
   rails_12factor
   rspec-rails
