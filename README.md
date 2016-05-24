@@ -1,15 +1,17 @@
 # Personal website redo
 
-by [Ka Mok](http://heykamok.com)
+by [Ka Mok](https://kamok-web.herokuapp.com/)
 
 Todo :
 
--use Amazon W3 to host image
+3. Add game to website showcase, link github
+4. review specs review
+4. Create specs for solver
+5. When tired, set up the Ruby env on the laptop.
+
 
 *Write tests for 
 	. Weather 
- A. Finish Services section
- 	3. Make snake
  1. Make the Blog prettier
  2. Animation -animate rails gem
 
