@@ -49,6 +49,36 @@ $navbar-default-link-color: 	#339933;
 /*alert*/
 $alert-border-radius: 0px;
 
+/*horizontal dividers*/
+$hr-border: black;
+
+hr.style1 {
+  border: 0; 
+  height: 3px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+hr.style2 {
+	border-top: 2px solid #ccc;
+	text-align: center;
+	max-width: 800px;
+}
+hr.style2:after {
+	content: '§';
+	display: inline-block;
+	position: relative;
+	top: -13px;
+	padding: 0 10px;
+	background: #fff;
+	color: #333;
+	font-size: 20px;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
 
 @import "bootstrap-sprockets";
 @import "bootstrap-tour.min";
