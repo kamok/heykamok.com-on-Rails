@@ -32,16 +32,17 @@ group :test do
 end
 
 #custom gems
-gem 'coffee-script-source', '1.8.0' #Newer version of this gem doesn't work with Windows 7. So we get older.
+gem 'animate-rails', '~> 1.0.10'
+gem 'browser', '~> 2.1.0'
 gem 'bootstrap-sass' , '~> 3.3.6'
 gem 'bootstrap-wysihtml5-rails'
+gem 'coffee-script-source', '1.8.0' #Newer version of this gem doesn't work with Windows 7. So we get older.
 gem 'color-generator'
 gem 'devise', '~> 4.0.0'
 gem "font-awesome-rails"
 gem 'friendly_id', '~> 5.1.0'
-gem 'pg', '~> 0.18.4'
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-gem 'browser', '~> 2.1.0'
 gem 'forecast_io', '~> 2.0.0'
 gem 'figaro', '~> 1.1.0'
+gem 'pg', '~> 0.18.4'
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 gem 'weather-icons-rails'

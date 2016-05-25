@@ -4,7 +4,7 @@ by [Ka Mok](https://kamok-web.herokuapp.com/)
 
 Todo :
 
-4. Create specs for solver
+4. Create specs for solver -- stuck!
 5. When tired, set up the Ruby env on the laptop.
 
 
