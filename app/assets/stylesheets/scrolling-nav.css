@@ -86,3 +86,21 @@
     background: #404040;
     color:white;
 }
+
+.super-secret-login-button{
+    padding-bottom: 15px;
+    h1{
+        display:inline;  
+        a:hover {
+            text-decoration: none;
+            cursor: default;
+            color:white;
+        }
+        a:link {
+            color: white;
+        }
+        a:visited {
+            color: white;
+        }
+    }
+}
