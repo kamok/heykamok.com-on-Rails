@@ -9,8 +9,10 @@ $(function() {
     });
 });
 
-//ka-face pop
+//ka-face bounce
 $(function() {
+	var animationName = 'animated bounce';
+	var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 	$(window).scroll(function() {
 	   var hT = $('#ka-portrait').offset().top,
 	       hH = $('#ka-portrait').outerHeight(),
@@ -18,7 +20,11 @@ $(function() {
 	       wS = $(this).scrollTop();
 	    console.log((hT-wH) , wS);
 	   if (wS > (hT+hH-wH)){
-	   		$("#ka-face").addClass("animated bounce")
+	   		$("#ka-face").addClass(animationName);
+
+	   		setTimeout(function() {
+       		$("#ka-face").removeClass(animationName);
+   			}, 10000);
 	   }
 	});
 });
