@@ -35,6 +35,7 @@
     }
 }
 
+/*about*/
 .about-section {
     /*min-height: 750px;*/
     overflow: hidden;
@@ -43,13 +44,20 @@
     background: #eee;
 }
 
-#about-quote{
+#about-quote {
     padding-top: 20px;
     padding-bottom: 25px;
     font-family: 'Open Sans', sans-serif;
     color:#339933;
 }
 
+#ka-face {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: 2;
+}
+
+/*projects*/
 .projects-section {
     overflow: hidden;
     padding-top: 50px;

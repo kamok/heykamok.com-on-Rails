@@ -8,3 +8,17 @@ $(function() {
         event.preventDefault();
     });
 });
+
+//ka-face pop
+$(function() {
+	$(window).scroll(function() {
+	   var hT = $('#ka-portrait').offset().top,
+	       hH = $('#ka-portrait').outerHeight(),
+	       wH = $(window).height(),
+	       wS = $(this).scrollTop();
+	    console.log((hT-wH) , wS);
+	   if (wS > (hT+hH-wH)){
+	   		$("#ka-face").addClass("animated bounce")
+	   }
+	});
+});
