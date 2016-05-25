@@ -4,7 +4,6 @@ by [Ka Mok](https://kamok-web.herokuapp.com/)
 
 Todo :
 
-3. Add game to website showcase, link github
 4. Create specs for solver
 5. When tired, set up the Ruby env on the laptop.
 
