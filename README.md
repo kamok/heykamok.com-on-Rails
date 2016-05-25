@@ -11,7 +11,6 @@ Todo :
 *Write tests for 
 	. Weather 
  1. Make the Blog prettier
- 2. Animation -animate rails gem
 
  B. Transfer data from wordpress into my blog.
  C. Delete current heykamok.com and integrate new website with domain.
