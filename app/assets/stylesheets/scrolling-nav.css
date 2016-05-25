@@ -52,8 +52,8 @@
 }
 
 #ka-face {
-    -webkit-animation-duration: 1s;
-    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 0.9s;
+    -webkit-animation-delay: 2s;
     -webkit-animation-iteration-count: 2;
 }
 

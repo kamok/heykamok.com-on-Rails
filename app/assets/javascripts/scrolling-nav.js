@@ -24,7 +24,7 @@ $(function() {
 
 	   		setTimeout(function() {
        		$("#ka-face").removeClass(animationName);
-   			}, 10000);
+   			}, 15000);
 	   }
 	});
 });
