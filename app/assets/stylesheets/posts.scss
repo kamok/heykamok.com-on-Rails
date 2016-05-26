@@ -7,26 +7,27 @@
 // Views/Blog
 ////
 
-.blog-view-head{
-	display:inline-block;
-
-	p{
-		display:inline-block;
-		// position: relative;
-  //   top: 30px;
-	}
-	h4{
-		display:inline-block;
-		margin-left: 37px;
-	}
-}
 @media(min-width:768px) {
 	.blog-view-body{
 		max-width:1000px;
-		margin-left: 130px;
+		margin-left: 160px;
+	}
+	.blog-view-head{
+		p{
+		display:inline-block;
+		}
+		h4{
+			margin-left: 40px;
+			display:inline-block;
+		}
 	}
 }
 
+@media(max-width:767px) {
+	.blog-view-head{
+		margin-top:30px;
+	}
+}
 ////
 // Views/Blog/Show
 ////
