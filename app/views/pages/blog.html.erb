@@ -7,13 +7,16 @@
 	<% end %>
 
 	<div class="col-lg-12">
-		<ul>
 			<% @post.order(created_at: :desc).each do |post| %>
-				<li>
-				<%= post.created_at.strftime("%m/%d/%Y")%>
-				<%= link_to post.title, post %>
-				</li>
+				<div class="blog-view-head">
+					<p><%= post.created_at.strftime("%m/%d/%Y")%></p>
+					<h4><b><%= link_to post.title, post %></b></h4>
+				</div>
+
+				<div class="blog-view-body">
+					<%= truncate(simple_format(post.body), escape: false, length: 200) %>
+				</div>
+
 			<% end %>
-		</ul> 
 	</div>
 </div>
