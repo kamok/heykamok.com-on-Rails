@@ -18,7 +18,7 @@ class PostsController < ApplicationController
       render "new"
     end
   end
-
+ 
   def show
     @reading_list = Post.reading_list
   end
