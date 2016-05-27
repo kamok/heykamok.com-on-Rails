@@ -3,7 +3,6 @@
 by [Ka Mok](https://kamok-web.herokuapp.com/)
 
 Todo :
-
 6. Google login too.
 7. Twilio API.
 8. Email when user makes changes to data. Action_mailer
@@ -22,3 +21,4 @@ active_record what is? object relational mapper. ruby queries
  3. Use phi equation to make a mini-game with 2 choices to collect statictical data.
  4. Add RoR to Toys?
  5. Cool background for front page of weather.
+ 6. Try Spring
