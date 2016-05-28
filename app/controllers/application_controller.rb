@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
     if Rails.env.production?
       cookies[:client_ip] = request.remote_ip
     else 
-      cookies[:client_ip] = "72.229.28.185"
+      cookies[:client_ip] = "72.229.28.184"
     end
   end
 
