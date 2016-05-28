@@ -9,4 +9,5 @@ class ApplicationController < ActionController::Base
       cookies[:client_ip] = "72.229.28.185"
     end
   end
+
 end
