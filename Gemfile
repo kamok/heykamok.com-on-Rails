@@ -31,6 +31,7 @@ group :test do
   gem 'factory_girl_rails', '~> 4.2.1'
   gem 'byebug'
   gem 'shoulda-matchers', '~> 3.1'
+  gem 'simplecov', require: false
 end
 
 #custom gems
