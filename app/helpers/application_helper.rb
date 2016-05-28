@@ -8,8 +8,4 @@ module ApplicationHelper
     end
   end
 
-  def pretty_updated_at(resource)
-    resource.updated_at.strftime("%m/%d/%Y")
-  end
-
 end
