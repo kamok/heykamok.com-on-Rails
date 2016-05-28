@@ -18,7 +18,11 @@
 <%= render 'layouts/header' %>
 	
 	<% flash.each do |name, msg| %>
-	  <%= content_tag(:div, msg, class: "alert alert-info", id: "flash") %>
+		<% if name == "notice" %>
+	  	<%= content_tag(:div, msg, class: "alert alert-notice", id: "flash") %>
+	  <% elsif name == "error" %>
+	  	<%= content_tag(:div, msg, class: "alert alert-warning", id: "flash") %>
+	  <% end %>
 	<% end %>
 
 <%= yield %>

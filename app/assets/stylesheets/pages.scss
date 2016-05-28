@@ -15,6 +15,15 @@ html
 
 }
 
+.alert-warning {
+	color: white;
+  background-color: #ff8080;
+  border-color: #ccc;
+	position:absolute;
+  top: 40px;
+  width:100%;
+}
+
 //Adjust for navbar
 #adjust-down {
 	margin-top: 100px;
@@ -25,6 +34,12 @@ html
 		position:absolute;
 	  top: 65px;
 	}
+
+	.alert-warning{
+		position:absolute;
+	  top: 65px;
+	}
+
 	#adjust-down {
 		margin-top: 120px;
 	}

@@ -14,7 +14,7 @@ class PostsController < ApplicationController
       flash[:notice] = "Post has been created."
       redirect_to @post
     else
-      flash[:alert] = "Post has not been created."
+      flash[:error] = "Post has not been created."
       render "new"
     end
   end
@@ -32,7 +32,7 @@ class PostsController < ApplicationController
       flash[:notice] = "Post has been updated."
       redirect_to @post
     else
-      flash[:notice] = "Post has not been updated."
+      flash[:error] = "Post has not been updated."
       render "edit"
     end
   end
