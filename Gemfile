@@ -32,9 +32,10 @@ group :test do
   gem 'byebug'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'simplecov', require: false
+  # gem 'simplecov-badge', :require => false 
 end
 
-#custom gems
+
 gem 'animate-rails', '~> 1.0.10'
 gem 'browser', '~> 2.1.0'
 gem 'bootstrap-sass' , '~> 3.3.6'
