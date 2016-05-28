@@ -4,4 +4,8 @@ class Post < ActiveRecord::Base
 
   validates :title, presence: true
   
+
+  def pretty_updated_at
+    updated_at.strftime("%-m/%-d/%Y")
+  end
 end

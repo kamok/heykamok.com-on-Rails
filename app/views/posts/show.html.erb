@@ -13,8 +13,8 @@
 	</div>
 
 	<h2><%= @post.title %></h2>
-	<i>Last updated on: <%= @post.updated_at.strftime("%m/%d/%Y")%></i>
+	<i>Last updated on: <%= @post.pretty_updated_at%></i>
 	<div id="post-body-view">
 		<%= simple_format(@post.body) %>
 	</div>
-</div>
+</div> 
