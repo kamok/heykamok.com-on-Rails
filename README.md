@@ -3,13 +3,12 @@
 by [Ka Mok](https://kamok-web.herokuapp.com/)
 
 Todo :
+6. Write tests
 7. Twilio API.
 8. Email when user makes changes to data. Action_mailer
 
-*Write tests for Weather when compelled.
-
- B. Transfer data from wordpress into my blog.
- C. Delete current heykamok.com and integrate new website with domain.
+B. Transfer data from wordpress into my blog.
+C. Delete current heykamok.com and integrate new website with domain.
 
 Study:
 what data models are for business, eg restaurant, help-desk, etc. eg(Users, Tables)

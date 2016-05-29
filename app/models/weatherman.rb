@@ -11,25 +11,23 @@ class Weatherman < ActiveRecord::Base
    "icon_day0", "icon_day1", "icon_day2", "icon_day3",                     #19-22
    "summary_day0", "summary_day1", "summary_day2", "summary_day3"]         #23-26
 
-  def self.prepare_weather(client_ip)
+  def prepare_weather(client_ip)
     prepare_geocode(client_ip)
     get_weather_data
     parse_and_store_weather_data
   end
 
-  private 
-
-  def self.parse_and_store_weather_data                              
+  def parse_and_store_weather_data                              
 
     stored_weather = []
 
     NON_REPEATING_WEATHER_PARAMETERS.each do |parameter|
       if parameter == "current_temp"
-        stored_weather << Weatherman.get_current_temp
+        stored_weather << get_current_temp
       elsif parameter == "current_summary"
-        stored_weather << Weatherman.get_current_summary
+        stored_weather << get_current_summary
       elsif parameter == "get_day_today"
-        stored_weather << Weatherman.get_day_today
+        stored_weather << get_day_today
       elsif parameter == "city_and_country"
         stored_weather << @city_and_country
       end
@@ -40,44 +38,44 @@ class Weatherman < ActiveRecord::Base
         day = parameter[-1].to_i
 
       if parameter.include?("min_temp_day") 
-        stored_weather << Weatherman.get_min_temp_for_day(day)
+        stored_weather << get_min_temp_for_day(day)
       elsif parameter.include?("max_temp_day") 
-        stored_weather << Weatherman.get_max_temp_for_day(day)
+        stored_weather << get_max_temp_for_day(day)
       elsif parameter.include?("day_day") 
-        stored_weather << Weatherman.get_day_for_day(day)
+        stored_weather << get_day_for_day(day)
       elsif parameter.include?("date_day") 
-        stored_weather << Weatherman.get_date_for_day(day)
+        stored_weather << get_date_for_day(day)
       elsif parameter.include?("icon_day") 
-        stored_weather << Weatherman.get_icon_for_day(day)
+        stored_weather << get_icon_for_day(day)
       else parameter.include?("summary_day")
-        stored_weather << Weatherman.get_summary_for_day(day)
+        stored_weather << get_summary_for_day(day)
       end
     end
 
     stored_weather
   end
 
-  def self.prepare_geocode(client_ip)
+  def prepare_geocode(client_ip)
     ip_metadata = open("http://ip-api.com/json/#{client_ip}").read
     @lat = JSON.parse(ip_metadata)["lat"]
     @lng = JSON.parse(ip_metadata)["lon"]
     @city_and_country = JSON.parse(ip_metadata)["city"] + ", " + JSON.parse(ip_metadata)["country"]
   end
 
-  def self.get_weather_data
+  def get_weather_data
     @forecast = ForecastIO.forecast(@lat, @lng)
   end
 
   #NON_REPEATING_WEATHER_PARAMETERS
-  def self.get_current_temp
+  def get_current_temp
     @forecast.currently["temperature"]
   end
 
-  def self.get_current_summary
+  def get_current_summary
     @forecast.currently["summary"]
   end
 
-  def self.get_day_today
+  def get_day_today
     hour_now = Time.at(@forecast.currently["time"]).strftime("%H")
     if hour_now.to_i < 18  ##If < 6PM, then return "Today" 
       "Today" 
@@ -87,28 +85,28 @@ class Weatherman < ActiveRecord::Base
   end
 
   #REPEATING_WEATHER_PARAMETERS
-  def self.get_min_temp_for_day(day)
+  def get_min_temp_for_day(day)
     @forecast.daily.data[day]["temperatureMin"]
   end
 
-  def self.get_max_temp_for_day(day)
+  def get_max_temp_for_day(day)
     @forecast.daily.data[day]["temperatureMax"]
   end
 
-  def self.get_day_for_day(day)
+  def get_day_for_day(day)
     Time.at(@forecast.daily.data[day]["time"]).strftime("%A")
   end
 
-  def self.get_date_for_day(day)
+  def get_date_for_day(day)
    Time.at(@forecast.daily.data[day]["time"]).strftime("%m/%d")
   end
 
-  def self.get_icon_for_day(day)
+  def get_icon_for_day(day)
     icon = @forecast.daily.data[day]["icon"]
     translate_icon_verbage(icon)
   end
 
-  def self.translate_icon_verbage(forecast_icon)
+  def translate_icon_verbage(forecast_icon)
     forecast_to_wi_icon = {
       "clear-day":           "day-sunny",
       "clear-night":         "night-clear",
@@ -129,7 +127,7 @@ class Weatherman < ActiveRecord::Base
     end
   end
 
-  def self.get_summary_for_day(day)
+  def get_summary_for_day(day)
     @forecast.daily.data[day]["summary"]
   end
 
