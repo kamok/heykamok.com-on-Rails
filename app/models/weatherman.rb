@@ -1,5 +1,7 @@
 class Weatherman < ActiveRecord::Base
 
+  attr_accessor :lat, :lng, :city_and_country
+
   NON_REPEATING_WEATHER_PARAMETERS = 
   ["current_temp", "current_summary", "get_day_today", "city_and_country"] #0-3
 
@@ -12,7 +14,7 @@ class Weatherman < ActiveRecord::Base
    "summary_day0", "summary_day1", "summary_day2", "summary_day3"]         #23-26
 
   def prepare_weather(client_ip)
-    prepare_geocode(client_ip)
+    prepare_geo_data(client_ip)
     get_weather_data
     parse_and_store_weather_data
   end
@@ -29,7 +31,7 @@ class Weatherman < ActiveRecord::Base
       elsif parameter == "get_day_today"
         stored_weather << get_day_today
       elsif parameter == "city_and_country"
-        stored_weather << @city_and_country
+        stored_weather << city_and_country
       end
     end
 
@@ -55,7 +57,7 @@ class Weatherman < ActiveRecord::Base
     stored_weather
   end
 
-  def prepare_geocode(client_ip)
+  def prepare_geo_data(client_ip)
     ip_metadata = open("http://ip-api.com/json/#{client_ip}").read
     @lat = JSON.parse(ip_metadata)["lat"]
     @lng = JSON.parse(ip_metadata)["lon"]
@@ -63,7 +65,7 @@ class Weatherman < ActiveRecord::Base
   end
 
   def get_weather_data
-    @forecast = ForecastIO.forecast(@lat, @lng)
+    @forecast = ForecastIO.forecast(lat, lng)
   end
 
   #NON_REPEATING_WEATHER_PARAMETERS
