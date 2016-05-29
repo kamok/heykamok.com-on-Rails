@@ -9,7 +9,7 @@ if ENV['RAILS_ENV'] == 'test'
   puts "required simplecov"
 end
 
-module Pinteresting
+module Heykamok
   class Application < Rails::Application
     config.active_record.raise_in_transactional_callbacks = true
   end

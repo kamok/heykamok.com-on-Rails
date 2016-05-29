@@ -58,4 +58,3 @@ Drinks
  3. Use phi equation to make a mini-game with 2 choices to collect statictical data.
  4. Add RoR to Toys?
  5. Cool background for front page of weather.
- 6. Try Spring
