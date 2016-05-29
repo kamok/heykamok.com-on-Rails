@@ -5,11 +5,8 @@ describe Weatherman do
   let(:weather) {Weatherman.new}
 
   describe "#prepare_weather" do
-    before(:each) do
-      @client_ip = "71.125.43.37"
-    end
-    it "takes an ip_address and calls prepare_weather with it" do
-      expect(weather.prepare_weather(@client_ip)).to be_an(Array)
+    it "takes an ip_address and returns an array " do
+      expect(weather.prepare_weather("71.125.43.37")).to be_an(Array)
     end
   end
 
@@ -54,10 +51,17 @@ describe Weatherman do
     end
   end
 
-  # describe "#parse_and_store_weather_data" do
-  #   it "returns the correct number of objects" do
-  #   end
-  # end
+  describe "#parse_and_store_weather_data" do
+    before(:each) do
+      weather.prepare_geo_data("71.125.43.37")
+      weather.get_weather_data
+    end
+    it "returns the correct number of objects" do
+      total_variables = Weatherman::NON_REPEATING_WEATHER_PARAMETERS.count +
+                        Weatherman::REPEATING_WEATHER_PARAMETERS.count
+      expect(weather.parse_and_store_weather_data.count).to eq(total_variables)
+    end
+  end
 
   # describe "#get_current_temp" do
   # end
