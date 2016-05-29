@@ -1,6 +1,6 @@
 class Weatherman < ActiveRecord::Base
 
-  attr_accessor :lat, :lng, :city_and_country
+  attr_accessor :lat, :lng, :city_and_country, :forecast
 
   NON_REPEATING_WEATHER_PARAMETERS = 
   ["current_temp", "current_summary", "get_day_today", "city_and_country"] #0-3
@@ -70,11 +70,11 @@ class Weatherman < ActiveRecord::Base
 
   #NON_REPEATING_WEATHER_PARAMETERS
   def get_current_temp
-    @forecast.currently["temperature"]
+    forecast.currently["temperature"]
   end
 
   def get_current_summary
-    @forecast.currently["summary"]
+    forecast.currently["summary"]
   end
 
   def get_day_today
@@ -88,23 +88,23 @@ class Weatherman < ActiveRecord::Base
 
   #REPEATING_WEATHER_PARAMETERS
   def get_min_temp_for_day(day)
-    @forecast.daily.data[day]["temperatureMin"]
+    forecast.daily.data[day]["temperatureMin"]
   end
 
   def get_max_temp_for_day(day)
-    @forecast.daily.data[day]["temperatureMax"]
+    forecast.daily.data[day]["temperatureMax"]
   end
 
   def get_day_for_day(day)
-    Time.at(@forecast.daily.data[day]["time"]).strftime("%A")
+    Time.at(forecast.daily.data[day]["time"]).strftime("%A")
   end
 
   def get_date_for_day(day)
-   Time.at(@forecast.daily.data[day]["time"]).strftime("%m/%d")
+   Time.at(forecast.daily.data[day]["time"]).strftime("%m/%d")
   end
 
   def get_icon_for_day(day)
-    icon = @forecast.daily.data[day]["icon"]
+    icon = forecast.daily.data[day]["icon"]
     translate_icon_verbage(icon)
   end
 
@@ -130,7 +130,7 @@ class Weatherman < ActiveRecord::Base
   end
 
   def get_summary_for_day(day)
-    @forecast.daily.data[day]["summary"]
+    forecast.daily.data[day]["summary"]
   end
 
 end

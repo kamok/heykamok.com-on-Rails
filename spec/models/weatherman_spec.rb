@@ -17,7 +17,7 @@ describe Weatherman do
     before(:each) do
       @client_ip = "71.125.43.37"
     end
-    it "creates a lat and long variable given an ip " do
+    it "creates lat and long given an ip " do
       expect(weather.lat).to be(nil)
       expect(weather.lng).to be(nil)
 
@@ -27,7 +27,7 @@ describe Weatherman do
       expect(weather.lng).to eq(-74.0079)
     end
 
-    it "creates a city variable given an ip" do
+    it "creates city_and_country given an ip" do
       expect(weather.city_and_country).to be(nil)
 
       weather.prepare_geo_data(@client_ip)
@@ -36,8 +36,23 @@ describe Weatherman do
     end
   end
 
-  # describe "#get_weather_data" do
-  # end
+  describe "#get_weather_data" do
+    before(:each) do
+      weather.prepare_geo_data("71.125.43.37")
+      weather.get_weather_data
+    end
+    it "creates a forecast hash using lat and lng" do
+      expect(weather.forecast).to be_a(Hashie::Mash)
+    end
+
+    it "forecast hash has a currently key" do
+      expect(weather.forecast).to have_key(:currently)
+    end
+
+    it "forecast hash has a daily key" do
+      expect(weather.forecast).to have_key(:daily)
+    end
+  end
 
   # describe "#parse_and_store_weather_data" do
   #   it "returns the correct number of objects" do
