@@ -18,10 +18,11 @@ describe Weatherman do
       expect(weather.lat).to be(nil)
       expect(weather.lng).to be(nil)
 
+      lat_lng = double(lat: 40.7139, lng: -74.0079)
+      expect(weather).to receive(:prepare_geo_data).with(@client_ip).and_return(lat_lng)
+      
       weather.prepare_geo_data(@client_ip)
 
-      expect(weather.lat).to eq(40.7139)
-      expect(weather.lng).to eq(-74.0079)
     end
 
     it "creates city_and_country given an ip" do
@@ -34,20 +35,21 @@ describe Weatherman do
   end
 
   describe "#get_weather_data" do
-    before(:each) do
-      weather.prepare_geo_data("71.125.43.37")
-      weather.get_weather_data
+    before(:all) do
+      @weathers = Weatherman.new
+      @weathers.prepare_geo_data("71.125.43.37")
+      @weathers.get_weather_data
     end
     it "creates a forecast hash using lat and lng" do
-      expect(weather.forecast).to be_a(Hashie::Mash)
+      expect(@weathers.forecast).to be_a(Hashie::Mash)
     end
 
     it "forecast hash has a currently key" do
-      expect(weather.forecast).to have_key(:currently)
+      expect(@weathers.forecast).to have_key(:currently)
     end
 
     it "forecast hash has a daily key" do
-      expect(weather.forecast).to have_key(:daily)
+      expect(@weathers.forecast).to have_key(:daily)
     end
   end
 
@@ -63,19 +65,21 @@ describe Weatherman do
     end
   end
 
-  # describe "weather data fetch methods" do
-  #   before(:each) do
-  #     weather.prepare_geo_data("71.125.43.37")
-  #     weather.get_weather_data
-  #   end
+  describe "weather data fetch methods" do
+    before(:context) do
+      @weathers = Weatherman.new
+      @weathers.prepare_geo_data("71.125.43.37")
+      @weathers.get_weather_data
+    end
 
-  #   it "#get_current_temp" do
-  #   end
-  # end
+    describe "#get_current_temp" do
+      it "returns a reasonable temperature range in NYC" do
+        expect(@weathers.get_current_temp).to be_between(-5, 103) #historic lows and high
+      end
+    end
 
-  # describe "#get_current_temp" do
-
-  # end
+    
+  end
 
   # describe "#get_current_summary" do
   # end
