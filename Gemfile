@@ -50,3 +50,4 @@ gem 'figaro', '~> 1.1.0'
 gem 'pg', '~> 0.18.4'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 gem 'weather-icons-rails'
+gem 'twilio-ruby', '~> 4.11.1'

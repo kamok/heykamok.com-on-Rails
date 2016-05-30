@@ -55,6 +55,6 @@ Drinks
 
 
  Ideal features
- 3. Use phi equation to make a mini-game with 2 choices to collect statictical data.
+ 3. Write a script that mutes volume on certain key press for X amount of time.
  4. Add RoR to Toys?
  5. Cool background for front page of weather.
