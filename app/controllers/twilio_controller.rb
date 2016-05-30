@@ -15,4 +15,10 @@ class TwilioController < ApplicationController
 
     render_twiml(response)
   end
+
+  def notify
+    client = Twilio::REST::Client.new Rails.application.secrets.twilio_account_sid, Rails.application.secrets.twilio_auth_token
+    message = client.messages.create from: '347-933-6917', to: '718-207-7558', body: 'Hey Ka, from Ka.'
+    render plain: message.status
+  end
 end

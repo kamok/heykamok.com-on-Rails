@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   
   get "get-hex", to: "hex_generators#get_hex"
   post "twilio/voice" => 'twilio#voice'
+  post 'twilio/notify' => 'twilio#notify'
 end
