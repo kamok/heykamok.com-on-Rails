@@ -80,4 +80,7 @@ Rails.application.configure do
   # Mailer set-up. For Heroku
   # Set host to your desired host. 
   config.action_mailer.default_url_options = { host: 'heykamok.com', port: 3000 }
+
+  #Twilio Webhook Authentication 
+  config.middleware.use Rack::TwilioWebhookAuthentication, Rails.application.secrets.twilio_auth_token, '/voice'
 end
