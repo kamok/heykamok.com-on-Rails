@@ -13,5 +13,5 @@ Rails.application.routes.draw do
   resources :posts, path: 'blog'
   
   get "get-hex", to: "hex_generators#get_hex"
-  # get "coverage/index", to: "coverage#index"
+  post "twilio/voice" => 'twilio#voice'
 end
