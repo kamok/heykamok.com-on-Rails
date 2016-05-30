@@ -63,7 +63,18 @@ describe Weatherman do
     end
   end
 
+  # describe "weather data fetch methods" do
+  #   before(:each) do
+  #     weather.prepare_geo_data("71.125.43.37")
+  #     weather.get_weather_data
+  #   end
+
+  #   it "#get_current_temp" do
+  #   end
+  # end
+
   # describe "#get_current_temp" do
+
   # end
 
   # describe "#get_current_summary" do
