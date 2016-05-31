@@ -95,8 +95,8 @@ describe Weatherman do
 
     describe "get_(max and min)_temp_for_day methods" do
       before(:context) do
-        @min = @weathers.get_min_temp_for_day(1)
-        @max = @weathers.get_max_temp_for_day(1)
+        @min = @weathers.get_min_temp_for_day(0)
+        @max = @weathers.get_max_temp_for_day(0)
       end
 
       it "output of get_min_temp is less than get_max_temp" do 
@@ -115,7 +115,7 @@ describe Weatherman do
     describe "#get_day_for_day" do
       it "returns a valid day" do
         days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-        expect(days).to include(@weathers.get_day_for_day(1))
+        expect(days).to include(@weathers.get_day_for_day(0))
       end
     end
 
@@ -128,10 +128,16 @@ describe Weatherman do
         expect(day).to be_between(1, 31)
       end
     end
+
+    describe "#get_icon_for_day" do
+      it "returns a valid icon string" do
+        valid_icons = ["clear-day", "clear-night", "rain", "snow", "sleet", "wind", "fog", "cloudy", "partly-cloudy-day", "partly-cloudy-night"]
+        expect(valid_icons).to include(@weathers.get_icon_for_day(0))
+      end
+    end
   end
 
-  # describe "#get_icon_for_day(day)" do
-  # end
+  
 
   # describe "#translate_icon_verbage(forecast_icon)" do
   # end
