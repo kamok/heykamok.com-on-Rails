@@ -1,5 +1,6 @@
 require 'rails_helper'
 require 'pry'
+require 'helpers/custom_matchers'
 
 describe Weatherman do
   let(:weather) {Weatherman.new}
@@ -78,7 +79,14 @@ describe Weatherman do
       end
     end
 
-    
+    describe "#get_current_summary" do
+      it "returns a string no longer than 4 words" do
+        expect(@weathers.get_current_summary).to be_a(String)
+        expect(@weathers.get_current_summary).to have_max_word_of(4)
+        expect(@weathers.get_current_summary).to have_min_word_of(1)
+      end
+    end
+
   end
 
   # describe "#get_current_summary" do
