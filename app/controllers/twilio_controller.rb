@@ -26,7 +26,7 @@ class TwilioController < ApplicationController
   def send_joke
     client = Twilio::REST::Client.new Rails.application.secrets.twilio_account_sid, Rails.application.secrets.twilio_auth_token
     message = client.messages.create from: '347-933-6917', to:  params[:phone_number], body: 'Can a kangaroo jump higher than a house? Of course, a house doesn’t jump at all.'
-    render plain: message.status
+    redirect_to :back
   end
 
 end
