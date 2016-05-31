@@ -171,14 +171,9 @@
 					<h1>Joke SMS</h1>
 
 					<span id = "joke-message-update"<p>Type in your phone number for a joke via text.</p></span>
-					<form>
-					  Phone Number:<br>
-					  <input type="text" id="phone_number">
-					  	<a id="send-joke" href="#joke-section">Send</a>
-					</form>
 
-					<% form_tag send_joke_path do %>
-						<label>Phone number</label>
+					<%= form_tag send_joke_path do %>
+						<label for="phone_number">Phone number</label>
 					  	<%= text_field_tag :phone_number %>
 					 <%= submit_tag "Send!" %>
 					<% end %>
