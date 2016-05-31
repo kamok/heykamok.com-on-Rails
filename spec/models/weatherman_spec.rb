@@ -119,14 +119,16 @@ describe Weatherman do
       end
     end
 
-
+    describe "#get_date_for_day" do
+      it "returns a valid date" do
+        date = @weathers.get_date_for_day(1).split"/"
+        month = date[0].to_i
+        day = date[1].to_i
+        expect(month).to be_between(1, 12)
+        expect(day).to be_between(1, 31)
+      end
+    end
   end
-
-  # describe "#get_day_for_day(day)" do
-  # end
-
-  # describe "#get_date_for_day(day)" do
-  # end
 
   # describe "#get_icon_for_day(day)" do
   # end
