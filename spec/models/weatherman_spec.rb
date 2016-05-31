@@ -93,14 +93,30 @@ describe Weatherman do
       end
     end
 
+    describe "get_(max and min)_temp_for_day methods" do
+      before(:context) do
+        @min = @weathers.get_min_temp_for_day(1)
+        @max = @weathers.get_max_temp_for_day(1)
+      end
+
+      it "output of get_min_temp is less than get_max_temp" do 
+        expect(@min).to be < @max
+      end
+
+      it "get_min_temp_for_day returns a reasonable temperature range in NYC" do
+        expect(@min).to be_between(-5, 103)
+      end
+
+      it "get_max_temp_for_day returns a reasonable temperature range in NYC" do
+        expect(@max).to be_between(-5, 103)
+      end
+    end
+
+    
+
   end
 
-  # describe "#get_day_today" do
-  # end
-
-  # describe "#get_min_temp_for_day(day)" do
-  # end
-
+ 
   # describe "#get_max_temp_for_day(day)" do
   # end
 
