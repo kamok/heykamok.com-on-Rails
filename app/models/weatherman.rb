@@ -100,7 +100,7 @@ class Weatherman < ActiveRecord::Base
   end
 
   def get_date_for_day(day)
-   Time.at(forecast.daily.data[day]["time"]).strftime("%m/%d")
+   Time.at(forecast.daily.data[day]["time"]).strftime("%-m/%-d")
   end
 
   def get_icon_for_day(day)

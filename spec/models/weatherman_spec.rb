@@ -112,12 +112,15 @@ describe Weatherman do
       end
     end
 
-    
-  end
+    describe "#get_day_for_day" do
+      it "returns a valid day" do
+        days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+        expect(days).to include(@weathers.get_day_for_day(1))
+      end
+    end
 
- 
-  # describe "#get_max_temp_for_day(day)" do
-  # end
+
+  end
 
   # describe "#get_day_for_day(day)" do
   # end
