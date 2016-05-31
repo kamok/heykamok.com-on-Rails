@@ -80,9 +80,12 @@ describe Weatherman do
     end
 
     describe "#get_current_summary" do
-      it "returns a string no longer than 4 words" do
+      it "returns a string no more than 4 words" do
         expect(@weathers.get_current_summary).to be_a(String)
         expect(@weathers.get_current_summary).to have_max_word_of(4)
+      end
+
+      it "returns more than a word" do
         expect(@weathers.get_current_summary).to have_min_word_of(1)
       end
     end
@@ -93,7 +96,7 @@ describe Weatherman do
       end
     end
 
-    describe "get_(max and min)_temp_for_day methods" do
+    describe "get_(max and min)_temp_for_day(day)" do
       before(:context) do
         @min = @weathers.get_min_temp_for_day(0)
         @max = @weathers.get_max_temp_for_day(0)
@@ -112,14 +115,14 @@ describe Weatherman do
       end
     end
 
-    describe "#get_day_for_day" do
+    describe "#get_day_for_day(day)" do
       it "returns a valid day" do
         days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
         expect(days).to include(@weathers.get_day_for_day(0))
       end
     end
 
-    describe "#get_date_for_day" do
+    describe "#get_date_for_day(day)" do
       it "returns a valid date" do
         date = @weathers.get_date_for_day(1).split"/"
         month = date[0].to_i
@@ -129,19 +132,27 @@ describe Weatherman do
       end
     end
 
-    describe "#get_icon_for_day" do
+    describe "#get_icon_for_day(day)" do
       it "returns a valid icon string" do
-        valid_icons = ["clear-day", "clear-night", "rain", "snow", "sleet", "wind", "fog", "cloudy", "partly-cloudy-day", "partly-cloudy-night"]
+        valid_icons = ["day-sunny", "night-clear", "rain", "snow", "hail", "strong-wind", "fog", "cloudy", "day-cloudy", "night-cloudy"]
         expect(valid_icons).to include(@weathers.get_icon_for_day(0))
+      end
+    end
+
+    describe "#get_summary_for_day(day)" do
+      it "returns a String" do
+        expect(@weathers.get_summary_for_day(0)).to be_a(String)
+      end
+
+      it "returns more than a word" do
+        expect(@weathers.get_summary_for_day(0)).to have_min_word_of(1)
       end
     end
   end
 
-  
-
-  # describe "#translate_icon_verbage(forecast_icon)" do
-  # end
-
-  # describe "#get_summary_for_day(day)" do
-  # end
+  describe "#translate_icon_verbage(forecast_icon)" do
+    it "returns na if given a invalid key" do
+      expect(weather.translate_icon_verbage("tornado")).to eq("na")
+    end
+  end
 end
