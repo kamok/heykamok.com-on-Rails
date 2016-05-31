@@ -14,7 +14,7 @@
 	  </section>
 
 	<!-- Weather Toy -->
-	<section id="toy-weather" class="weather-section">
+	<section class="weather-section">
     <div class="container">
 
       <div class="row">
@@ -142,13 +142,12 @@
   </section><!-- id="toy-weather" class="weather-section" -->
 
 	<!-- Clicky Table Toy -->
-  <section id="toy-table" class="table-section">
+  <section class="table-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
 					<h1>Clicky Table</h1>
-
-					<p>TBD.</p>
+					<p>In construction.</p>
         <table id = "random_table">
 				  <tr>
 				    <td></td>
@@ -159,6 +158,31 @@
 				  </tr>
 				</table>
          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Send Joke Toy -->
+  <section id="joke-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+					<h1>Joke SMS</h1>
+
+					<span id = "joke-message-update"<p>Type in your phone number for a joke via text.</p></span>
+					<form>
+					  Phone Number:<br>
+					  <input type="text" id="phone_number">
+					  	<a id="send-joke" href="#joke-section">Send</a>
+					</form>
+
+					<% form_tag send_joke_path do %>
+						<label>Phone number</label>
+					  	<%= text_field_tag :phone_number %>
+					 <%= submit_tag "Send!" %>
+					<% end %>
+       		<!--<%= %> -->
         </div>
       </div>
     </div>

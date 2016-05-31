@@ -13,5 +13,5 @@ class PagesController < ApplicationController
   def reading_list
     @reading_list = ReadingList.first
   end
-  
+   
 end

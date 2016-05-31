@@ -2,11 +2,7 @@
 
 by [Ka Mok](https://kamok-web.herokuapp.com/)
 
-Todo :
-6. Write tests
-7. Twilio API.
-8. Email when user makes changes to data. Action_mailer
-
+Todo
 B. Transfer data from wordpress into my blog.
 C. Delete current heykamok.com and integrate new website with domain.
 
@@ -55,6 +51,9 @@ Drinks
 
 
  Ideal features
- 3. Write a script that mutes volume on certain key press for X amount of time.
- 4. Add RoR to Toys?
- 5. Cool background for front page of weather.
+ When learning Vim, get close to 100% LOC tested.
+
+ 1. Email when user makes changes to data. Action_mailer
+ 2. Write a script that mutes volume on certain key press for X amount of time.
+ 3. Add RoR to Toys?
+ 4. Cool background for front page of weather.
