@@ -89,7 +89,7 @@ describe Weatherman do
 
     describe "#get_day_today" do
       it "returns Today or Tonight" do
-        expect(@weathers.get_day_today).to be_this_or_that(["Today", "Tonight"])
+        expect(@weathers.get_day_today).to eq("Today").or eq("Tonight")
       end
     end
 
@@ -113,7 +113,6 @@ describe Weatherman do
     end
 
     
-
   end
 
  
