@@ -3,6 +3,9 @@
 by [Ka Mok](https://kamok-web.herokuapp.com/)
 
 Todo
+A. Feature for Joke Toy:
+	1. Random Joke.
+	2. Saves phone number, allow one joke per day
 B. Transfer data from wordpress into my blog.
 C. Delete current heykamok.com and integrate new website with domain.
 
