@@ -75,13 +75,16 @@
 }
 
 #random_table {
-  margin: auto;
-	width:350px; 
-	border: 1;
-	border-spacing: 5px;
+    margin: 0 auto 20px;
+    width:350px; 
+    border: 1;
+    border-spacing: 5px;
+    border-collapse: collapse;
 	tr td {
 		height: 20px;
 		width: 20%;
+        cursor:pointer;
+        border: 1px solid black;
 	}
 }
 
