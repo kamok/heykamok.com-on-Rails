@@ -11,7 +11,7 @@ class Joke < ActiveRecord::Base
 							 'Just read that 4,153,237 people got married last year, not to cause any trouble but shouldn\'t that be an even number?',
 							 'Life is all about perspective. The sinking of the Titanic was a miracle to the lobsters in the ship\'s kitchen.',
 							]
-	def pick_joke
+	def self.pick_joke
 		JOKES_LIST.sample
 	end
 end
