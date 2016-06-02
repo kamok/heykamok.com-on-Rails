@@ -1,4 +1,4 @@
-class Twilio < ActiveRecord::Base
+class Joke < ActiveRecord::Base
 	JOKES_LIST = ["I want to die peacefully in my sleep, like my grandfather... Not screaming and yelling like the passengers in his car.",
 							 "Can a kangaroo jump higher than a house? Of course, a house doesn’t jump at all.",
 							 "I think my neighbor is stalking me as she's been googling my name on her computer. I saw it through my telescope last night.",

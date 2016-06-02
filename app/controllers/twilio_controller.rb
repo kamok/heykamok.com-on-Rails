@@ -24,7 +24,7 @@ class TwilioController < ApplicationController
 
   def send_joke
     client = Twilio::REST::Client.new Rails.application.secrets.twilio_account_sid, Rails.application.secrets.twilio_auth_token
-    message = client.messages.create from: '347-933-6917', to:  params[:phone_number], body: Twilio.pick_joke
+    message = client.messages.create from: '347-933-6917', to:  params[:phone_number], body: Joke.pick_joke
     redirect_to :back
   end
 
