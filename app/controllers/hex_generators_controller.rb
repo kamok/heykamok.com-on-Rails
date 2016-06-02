@@ -4,4 +4,3 @@ class HexGeneratorsController < ApplicationController
     render json: {"code": hex_code}
   end
 end 
-
