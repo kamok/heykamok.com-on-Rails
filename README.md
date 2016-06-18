@@ -3,16 +3,13 @@
 by [Ka Mok](https://kamok-web.herokuapp.com/)
 
 Todo
-A. Feature for Joke Toy:
-	1. Random Joke.
-	2. Saves phone number, allow one joke per day
-B. Transfer data from wordpress into my blog.
-C. Delete current heykamok.com and integrate new website with domain.
+Explore using hash data structure for weather toy.
 
 Study:
 what data models are for business, eg restaurant, help-desk, etc. eg(Users, Tables)
  D. SQL
-
+REST
+SOLID
 active_record what is? object relational mapper. ruby queries 
 
 Guest - has one table, has one order
@@ -49,8 +46,6 @@ Drinks
 - price
 - created_at
 - updated_at
-
-
 
 
  Ideal features
