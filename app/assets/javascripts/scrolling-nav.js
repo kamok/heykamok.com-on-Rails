@@ -19,7 +19,8 @@ $(function() {
            hH = $('#ka-portrait').outerHeight(),
            wH = $(window).height(),
            wS = $(this).scrollTop();
-        console.log((hT-wH) , wS);
+        // console.log((hT+hH-wH) , wS); 
+        // "If confused, enable this and scroll up and down"
        if (wS > (hT+hH-wH)){
           $("#ka-face").addClass(animationName);
 
