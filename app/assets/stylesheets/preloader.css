@@ -10,7 +10,7 @@
     z-index: 99999999999;
 }
 
-.site-spinner {
+/*.site-spinner {
     border: 2px solid #ddd;
     font-size: 44px;
     width: 44px;
@@ -57,4 +57,4 @@
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
-}
+}*/
