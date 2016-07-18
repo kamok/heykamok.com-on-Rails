@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>
-		<% if content_for?(:title) %>
-			<%= yield(:title) %>
-		<% else %>
-			Ka Mok
+	<head>
+	  <title>
+			<% if content_for?(:title) %>
+				<%= yield(:title) %>
+			<% else %>
+				Ka Mok
+			<% end %>
+		</title>
+		<%= favicon_link_tag 'favicon.ico' %>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+	  <%= csrf_meta_tags %>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.10, maximum-scale=1.0, user-scalable=no" >
+	</head>
+	<body>
+
+	<%= render 'layouts/header' %>
+		
+		<% flash.each do |name, msg| %>
+			<% if name == "notice" %>
+		  	<%= content_tag(:div, msg, class: "alert alert-info", id: "flash") %>
+		  <% elsif name == "error" %>
+		  	<%= content_tag(:div, msg, class: "alert alert-warning", id: "flash") %>
+		  <% end %>
 		<% end %>
-	</title>
-	<%= favicon_link_tag 'favicon.ico' %>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
-  <%= csrf_meta_tags %>
-  <meta name="viewport" content="width=device-width, initial-scale=1.10, maximum-scale=1.0, user-scalable=no" >
-</head>
-<body>
 
-<%= render 'layouts/header' %>
-	
-	<% flash.each do |name, msg| %>
-		<% if name == "notice" %>
-	  	<%= content_tag(:div, msg, class: "alert alert-info", id: "flash") %>
-	  <% elsif name == "error" %>
-	  	<%= content_tag(:div, msg, class: "alert alert-warning", id: "flash") %>
-	  <% end %>
-	<% end %>
+	<%= yield %>
 
-<%= yield %>
+	<% render 'layouts/js' %>
 
-</body>
+	</body>
 </html>
