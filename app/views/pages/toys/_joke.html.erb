@@ -1,0 +1,19 @@
+<!-- Send Joke Toy -->
+  <section id="joke-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+					<h1>Joke SMS</h1>
+
+					<span id = "joke-message-update"<p>Type in your phone number for a joke via text.</p></span>
+
+					<%= form_tag send_joke_path do %>
+						<label for="phone_number">Phone number</label>
+					  	<%= text_field_tag :phone_number %>
+					 <%= submit_tag "Send!" %>
+					<% end %>
+       		<!--<%= %> -->
+        </div>
+      </div>
+    </div>
+  </section>
