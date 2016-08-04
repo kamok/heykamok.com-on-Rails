@@ -17,6 +17,6 @@ test:
   pool: 5
   timeout: 5000
   
-travis:
-  adapter: postgresql
-  database: travis_ci_test
+# travis:
+#   adapter: postgresql
+#   database: travis_ci_test
