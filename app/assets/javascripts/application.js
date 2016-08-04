@@ -20,11 +20,6 @@
 //= require angular-animate
 //= require angular-resource
 
-//= require weatherman/weather.module
-//= require weatherman/weather.factory
-//= require weatherman/weather.controller
-//= require weatherman/weather.model
-
 //= require click_table
 //= require joke
 //= require preloader
