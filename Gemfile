@@ -37,6 +37,7 @@ end
 
 
 gem 'animate-rails', '~> 1.0.10'
+gem 'angularjs-rails'
 gem 'browser', '~> 2.1.0'
 gem 'bootstrap-sass' , '~> 3.3.6'
 gem 'bootstrap-wysihtml5-rails'

@@ -15,7 +15,16 @@
 //= require bootstrap
 //= require bootstrap-tour.min
 //= require bootstrap-wysihtml5
-//= require_tree .
+//= require angular
+//= require angular-animate
+//= require angular-resource
+
+//= require weatherman/weather.module
+//= require weatherman/weather.factory
+//= require weatherman/weather.controller
+//= require weatherman/weather.model
+
+//= require_self
 
 //WYSIWYG
 $(document).ready(function(){

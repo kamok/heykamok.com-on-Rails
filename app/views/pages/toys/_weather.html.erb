@@ -1,123 +1,59 @@
-<!-- Weather Toy -->
-	<section class="weather-section">
-    <div class="container">
+<section class="weather-section">
+	<div class="container" ng-app="weatherApp">
+		<div class="container">
 
-      <div class="row">
-        <div class="col-lg-12">
-	        <h1>Weather Forecast</h1>
-		        <p>Your ip address is <%= cookies[:client_ip] %></p>
-		        <p>...which means you're in <%= @weather_array[3] %></p>
-					<div class="circle">
-				    <span>
-					    <div id="toy-current-temp">
-								<%= @weather_array[0].to_i %>°
-							</div>
-							<%= @weather_array[1] %>
-							<div id="toy-max-min-temp-current">
-								<b><%= @weather_array[8].to_i %>°</b> / <%= @weather_array[4].to_i %>°
-							</div>
-				    </span>
-				  </div><!-- circle -->
-				</div><!-- col-lg-12 -->
-			</div><!-- row -->
-      
-			<div class="row">
-			<!-- Day0 -->
-		 	<div class="col-lg-3">
-		 		<div class="weather-box">
+			<h1>Weatherman</h1>
+			<div ng-controller="weatherCtrl">
+				<form ng-submit="findWeather(locationQuery)">
+					<div class="form-group">
+				    <input type="text" ng-model="locationQuery" placeholder="Central Park" class="form-control">
+				  </div>
+			  </form>
 
-		 			<div class="toy-weather-day">
-		 				<%= @weather_array[2] %><br>
-		 				<b><%= @weather_array[15] %></b>
-		 			</div>
+			<div class="row"></div>
+				
+				<h3>{{ address }}</h3>
 
-		 			<div class="weather-icon">
-		 				<%= wi_icon(@weather_array[19]) %>
-		 			</div>
+				<div class="circle">
+			    <span>
+				    <div id="toy-current-temp">
+							{{ currentTemp }}°F
+						</div>
+						{{ currentSummary }}
+						<div id="toy-max-min-temp-current">
+						<b>{{ todayMax }}°</b>/{{ todayMin }}°
+						</div>
+			    </span>
+			  </div><!-- circle -->
 
-		 			<div class="max-min-temp">
-		 				<%= @weather_array[8].to_i %>° / <%= @weather_array[4].to_i %>°
-		 			</div>
+			  <div class="row"></div>
+			  <div ng-repeat="eachDay in forecast">
+				 	<div class="col-lg-3">
+				 		<div class="weather-box">
+				 			<div class="toy-weather-day">
+				 				<p><b><big>{{ eachDay.day }}</big></b></p>
+				 				<p>{{ eachDay.date }}</p>
+				 			</div>
 
-		 			<div class="weather-summary">
-		 				<%= @weather_array[23] %>
-		 			</div>
+				 			<div class="weather-icon">
+		 		 				<i class="wi wi-{{ eachDay.icon }}"></i>
 
-		 		</div>
-		 	</div>
+		 		 			</div>
 
-		 	<!-- Day1 -->
-		 	<div class="col-lg-3">
-		 		<div class="weather-box">
+				 			<div class="max-min-temp">
+				 				<b>{{ eachDay.max }}°</b>/{{ eachDay.min}}°
+				 			</div>
 
-		 			<div class="toy-weather-day">
-		 				<%= @weather_array[12] %><br> 
-		 				<b><%= @weather_array[16] %></b>
-		 			</div>
+				 			<div class="weather-summary">
+				 				{{ eachDay.summary }}
+				 			</div>
 
-		 			<div class="weather-icon">
-		 				<%= wi_icon(@weather_array[20]) %>
-		 			</div>
+				 		</div>
+				 	</div><!-- col-lg-3 -->
+				</div>
 
-					<div class="max-min-temp">
-		 				<%= @weather_array[9].to_i %>° / <%= @weather_array[5].to_i %>°
-		 			</div>
-
-		 			<div class="weather-summary">
-		 				<%= @weather_array[24] %>
-		 			</div>
-
-		 		</div>
-		 	</div>
-
-		 	<!-- Day2 -->
-		 	<div class="col-lg-3">
-			 	<div class="weather-box">
-
-			 		<div class="toy-weather-day">
-		 				<%= @weather_array[13] %><br>
-		 				<b><%= @weather_array[17] %></b>
-		 			</div>
-
-		 			<div class="weather-icon">
-		 				<%= wi_icon(@weather_array[21]) %>
-		 			</div>
-
-		 			<div class="max-min-temp">
-		 				<%= @weather_array[10].to_i %>° / <%= @weather_array[6].to_i %>°
-		 			</div>
-
-		 			<div class="weather-summary">
-		 				<%= @weather_array[25] %>
-		 			</div>
-		 
-			 	</div>
-		 	</div>
-
-		 	<!-- Day3 -->
-		 	<div class="col-lg-3">
-		 		<div class="weather-box">
-
-		 			<div class="toy-weather-day">
-		 				<%= @weather_array[14] %><br>
-		 				<b><%= @weather_array[18] %></b>
-		 			</div>
-
-		 			<div class="weather-icon">
-		 				<%= wi_icon(@weather_array[22]) %>
-		 			</div>
-
-		 			<div class="max-min-temp">
-		 				<%= @weather_array[11].to_i %>° / <%= @weather_array[7].to_i %>°
-		 			</div>
-
-		 			<div class="weather-summary">
-		 				<%= @weather_array[26] %>
-		 			</div>
-		 	
-		 		</div>
-		 	</div>
-
-		</div><!-- row -->
-  </div><!-- container -->
-</section><!-- id="toy-weather" class="weather-section" -->
+			</div><!-- ng-controller="weatherCtrl" -->
+		
+		</div>
+	</div>
+</section>
