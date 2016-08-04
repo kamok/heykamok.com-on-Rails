@@ -20,7 +20,7 @@ function ($http, $q) {
   	var lat = geocode.lat;
   	var lng = geocode.lng;
   	var deferred = $q.defer();
-    $http.get('https://api.forecast.io/forecast/55017c0ce854ceab1db44c34d7bb07d5/' + lat + ',' + lng)
+    $http.jsonp('https://api.forecast.io/forecast/55017c0ce854ceab1db44c34d7bb07d5/' + lat + ',' + lng + '?callback=JSON_CALLBACK')
       .success(function(data){
         deferred.resolve(data);
       })
