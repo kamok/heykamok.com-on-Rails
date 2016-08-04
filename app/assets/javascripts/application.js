@@ -12,6 +12,7 @@
 
 //= require jquery
 //= require jquery_ujs
+//= require jquery.easing.min
 //= require bootstrap
 //= require bootstrap-tour.min
 //= require bootstrap-wysihtml5
@@ -23,6 +24,11 @@
 //= require weatherman/weather.factory
 //= require weatherman/weather.controller
 //= require weatherman/weather.model
+
+//= require click_table
+//= require joke
+//= require preloader
+//= require scrolling-nav
 
 //= require_self
 
