@@ -19,6 +19,7 @@
 //= require angular
 //= require angular-animate
 //= require angular-resource
+//= require bootstrap-sprockets
 
 //= require click_table
 //= require joke
