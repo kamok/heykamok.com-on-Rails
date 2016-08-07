@@ -26,6 +26,8 @@
 //= require preloader
 //= require scrolling-nav
 
+//= require_tree ./angular-weather
+
 //= require_self
 
 //WYSIWYG
