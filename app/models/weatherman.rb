@@ -1,7 +1,7 @@
-require 'openssl'
-OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
-#disable this in production
-#disable this in production
+# if Rails.env.development?
+#   require 'openssl'
+#   OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
+# end
 
 class Weatherman < ActiveRecord::Base
 
