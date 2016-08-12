@@ -50,8 +50,23 @@ class Weatherman < ActiveRecord::Base
       @maxes << @forecast_metadata.daily.data[i]["temperatureMax"]
       @mins << @forecast_metadata.daily.data[i]["temperatureMin"]
       @summaries << @forecast_metadata.daily.data[i]["summary"]
-      @icons << @forecast_metadata.daily.data[i]["icon"]
+      @icons << translate_icon_verbage(@forecast_metadata.daily.data[i]["icon"])
     end
   end
 
+  def translate_icon_verbage(icon)
+    forecast_to_wi_icon = {
+      "clear-day":           "day-sunny",
+      "clear-night":         "night-clear",
+      "rain":                "rain",
+      "snow":                "snow",
+      "sleet":               "hail",
+      "wind":                "strong-wind",
+      "fog":                 "fog",
+      "cloudy":              "cloudy",
+      "partly-cloudy-day":   "day-cloudy",
+      "partly-cloudy-night": "night-cloudy"
+    }
+    forecast_to_wi_icon[icon.to_sym] ? forecast_to_wi_icon[icon.to_sym] : "na"
+  end
 end
