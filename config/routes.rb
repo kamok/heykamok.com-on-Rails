@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   resources :posts, path: 'blog'
   
+  post "weather" => "weatherman#get_weather"
+
   get "get-hex", to: "hex_generators#get_hex"
   post "twilio/voice" => 'twilio#voice'
   post 'twilio/notify' => 'twilio#notify'
