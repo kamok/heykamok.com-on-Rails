@@ -22,35 +22,36 @@ class Weatherman < ActiveRecord::Base
 
   def get_weather_data
     @forecast_metadata = ForecastIO.forecast(@lat, @lng)
-    get_dates
   end
 
   def build_forecast
-    forecast = {}
-    forecast["location"] = @location
-    forecast["current_temp"] = @forecast_metadata.currently["temperature"]
-    7.times do |i|
-      forecast["day#{i}"] = {
-        "date" => @dates[i]
-        # "day" => "@dates[i]",
-        # "max" => "@dates[i]",
-        # "min" => "@dates[i]",
-        # "summary" => "@dates[i]",
-        # "icon" => "@dates[i]"
-      }
+    {}.tap do |forecast|
+      forecast["location"] = @location
+      forecast["current_temp"] = @forecast_metadata.currently["temperature"]
+      get_repeating_weather_parameters
+      7.times do |i|
+        forecast["day#{i}"] = {
+          "date" => @dates[i],
+          "day" => @days[i],
+          "max" => @maxes[i],
+          "min" => @mins[i],
+          "summary" => @summaries[i],
+          "icon" => @icons[i]
+        }
+      end
     end
-    forecast
   end
 
-  def get_dates
-    @dates = []
-    7.times { |i| @dates << Time.at(@forecast_metadata.daily.data[i]["time"]).strftime("%-m/%-d") }
+  def get_repeating_weather_parameters
+    @dates, @days, @maxes, @mins, @summaries, @icons = [],[],[],[],[],[]
+    7.times do |i|
+      @dates << Time.at(@forecast_metadata.daily.data[i]["time"]).strftime("%-m/%-d")
+      @days << Time.at(@forecast_metadata.daily.data[i]["time"]).strftime("%A")
+      @maxes << @forecast_metadata.daily.data[i]["temperatureMax"]
+      @mins << @forecast_metadata.daily.data[i]["temperatureMin"]
+      @summaries << @forecast_metadata.daily.data[i]["summary"]
+      @icons << @forecast_metadata.daily.data[i]["icon"]
+    end
   end
-
-  # def build_min
-  # end
-
-  # def build_max
-  # end
 
 end
