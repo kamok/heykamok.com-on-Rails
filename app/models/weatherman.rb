@@ -1,7 +1,7 @@
-# if Rails.env.development?
-#   require 'openssl'
-#   OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
-# end
+if Rails.env.development?
+  require 'openssl'
+  OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
+end
 
 class Weatherman < ActiveRecord::Base
 
