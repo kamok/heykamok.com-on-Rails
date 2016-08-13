@@ -27,7 +27,7 @@
 			  </div><!-- circle -->
 
 			  <div class="row"></div>
-			  <div ng-repeat="eachDay in forecast">
+			  <div ng-repeat="eachDay in forecast" ng-show="$index < 4">
 				 	<div class="col-sm-3">
 				 		<div class="weather-box">
 				 			<div class="toy-weather-day">
@@ -41,7 +41,7 @@
 		 		 			</div>
 
 				 			<div class="max-min-temp">
-				 				<b>{{ eachDay.max }}°</b>/{{ eachDay.min}}°
+				 				<b>{{ eachDay.max | number: 0 }}°</b>/{{ eachDay.min | number: 0 }}°
 				 			</div>
 
 				 			<div class="weather-summary">

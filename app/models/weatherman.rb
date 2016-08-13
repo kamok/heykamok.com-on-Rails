@@ -25,12 +25,15 @@ class Weatherman < ActiveRecord::Base
   end
 
   def build_forecast
-    {}.tap do |forecast|
+    #This Hash.new {...} is so we can do nested hash side by side later on.
+    forecast = Hash.new { |h,k| h[k]=Hash.new(&h.default_proc) } 
       forecast["location"] = @location
       forecast["current_temp"] = @forecast_metadata.currently["temperature"]
+      forecast["current_summary"] = @forecast_metadata.currently["summary"]
       get_repeating_weather_parameters
+      
       7.times do |i|
-        forecast["day#{i}"] = {
+        forecast["weekly_forecast"]["day#{i}"] = {
           "date" => @dates[i],
           "day" => @days[i],
           "max" => @maxes[i],
@@ -39,7 +42,7 @@ class Weatherman < ActiveRecord::Base
           "icon" => @icons[i]
         }
       end
-    end
+    forecast
   end
 
   def get_repeating_weather_parameters
