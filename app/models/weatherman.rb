@@ -32,7 +32,7 @@ class Weatherman < ActiveRecord::Base
       forecast["current_summary"] = @forecast_metadata.currently["summary"]
       get_repeating_weather_parameters
       
-      7.times do |i|
+      8.times do |i|
         forecast["weekly_forecast"]["day#{i}"] = {
           "date" => @dates[i],
           "day" => @days[i],
@@ -47,7 +47,7 @@ class Weatherman < ActiveRecord::Base
 
   def get_repeating_weather_parameters
     @dates, @days, @maxes, @mins, @summaries, @icons = [],[],[],[],[],[]
-    7.times do |i|
+    8.times do |i|
       @dates << Time.at(@forecast_metadata.daily.data[i]["time"]).strftime("%-m/%-d")
       @days << Time.at(@forecast_metadata.daily.data[i]["time"]).strftime("%A")
       @maxes << @forecast_metadata.daily.data[i]["temperatureMax"]
