@@ -1,17 +1,13 @@
 <section class="weather-section">
 	<div class="container" ng-app="weatherApp">
-		<div class="container">
-
-			<h1>Weatherman</h1>
-			<div ng-controller="weatherCtrl">
-				<form ng-submit="findWeather(locationQuery)">
-					<div class="form-group">
-				    <input type="text" ng-model="locationQuery" placeholder="Central Park" class="form-control">
-				  </div>
-			  </form>
-
-			<div class="row"></div>
-				
+		<h1>Weatherman</h1>
+		<div ng-controller="weatherCtrl">
+			<form ng-submit="findWeather(locationQuery)">
+				<div class="form-group">
+			    <input type="text" ng-model="locationQuery" placeholder="Central Park" class="form-control">
+			  </div>
+		  </form>
+				<div class="row"></div>
 				<h3>{{ address }}</h3>
 
 				<div class="circle">
@@ -37,7 +33,6 @@
 
 				 			<div class="weather-icon">
 		 		 				<i class="wi wi-{{ eachDay.icon }}"></i>
-
 		 		 			</div>
 
 				 			<div class="max-min-temp">
@@ -47,13 +42,9 @@
 				 			<div class="weather-summary">
 				 				{{ eachDay.summary }}
 				 			</div>
-
 				 		</div>
-				 	</div><!-- col-lg-3 -->
-				</div>
-
-			</div><!-- ng-controller="weatherCtrl" -->
-		
-		</div>
-	</div>
+				 	</div><!-- col-sm-3 -->
+				</div><!-- ng-repeat="eachDay in forecast" -->
+		</div><!-- ng-controller="weatherCtrl" -->
+	</div><!-- ng-app="weatherApp" -->
 </section>
