@@ -14,7 +14,7 @@ class Weatherman < ActiveRecord::Base
   private
 
   def prepare_geo_data(query)
-    geo_metadata = open('https://maps.googleapis.com/maps/api/geocode/json?address=' + query + '&key=AIzaSyCAARRQCHp-g71b1k8up7GkbflSLeI02XY').read
+    geo_metadata = open('https://maps.googleapis.com/maps/api/geocode/json?address=' + query + '&key=' + Figaro.env.google_maps_api_key).read
     @lat = JSON.parse(geo_metadata)["results"][0]["geometry"]["location"]["lat"]
     @lng = JSON.parse(geo_metadata)["results"][0]["geometry"]["location"]["lng"]
     @location = JSON.parse(geo_metadata)["results"][0]["formatted_address"]
