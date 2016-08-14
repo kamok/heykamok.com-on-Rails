@@ -23,9 +23,9 @@
 			  </div><!-- circle -->
 			  <div class="row"></div>
 
-			  <ul rn-carousel class="image">
-			  	<li ng-repeat="eachSet in testing">
-			  		<div ng-repeat="eachDay in eachSet" class="layer">
+			  
+			  	<!-- <ul ng-repeat="eachSet in testing">
+			  		<div ng-repeat="eachDay in eachSet">
 				  		<div class="col-sm-3">
 						 		<div class="weather-box">
 
@@ -49,11 +49,60 @@
 						 		</div>
 					 		</div>			  		
 				 		</div>
-			  	</li>
-			  </ul>
+			  	</ul> -->
+<!-- 
+			  	<div ng-repeat="eachSet in testing">
+			  		<div ng-repeat="eachDay in eachSet">
+			  			{{ eachDay }}
+			  		</div>
+			  	</div> -->
+
+				    <!-- <div uib-carousel active="active">
+				      <div ng-repeat="eachSet in testing">
+				      	<div uib-slide ng-repeat="eachDay in eachSet">
+				       		{{ eachDay }}
+				        </div>
+				      </div>
+				    </div> -->
+
+				    <div uib-carousel active="active">
+				      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+				      	<div ng-repeat="eachDay in slide" ng-show="$index < 4">
+				        	<div class="col-sm-3">
+							 			<div class="weather-box">
+
+							 			<div class="toy-weather-day">
+							 				<p><b><big>{{ eachDay.day }}</big></b></p>
+							 				<p>{{ eachDay.date }}</p>
+							 			</div>
+
+							 			<div class="weather-icon">
+					 		 				<i class="wi wi-{{ eachDay.icon }}"></i>
+					 		 			</div>
+
+							 			<div class="max-min-temp">
+							 				<b>{{ eachDay.max | number: 0 }}°</b>/{{ eachDay.min | number: 0 }}°
+							 			</div>
+
+							 			<div class="weather-summary">
+							 				{{ eachDay.summary }}
+							 			</div>
+							 		</div>
+						 		</div>
+					 			</div>	
+				        </div>
+				      </div>
+				    </div>
+
 		</div><!-- ng-controller="weatherCtrl" -->
 	</div><!-- ng-app="weatherApp" -->
 </section>
-
-<script src="angular-carousel.min.js"></script>
+<script src="ui-bootstrap.js"></script>
 <script src="angular-touch.min.js"></script>
+<!-- remove css too -->
+
+<script>
+$(document).ready(function(){
+	$(".navbar-header.page-scroll.a").trigger("click");
+});
+</script>

@@ -12,9 +12,10 @@ function($scope, weatherService) {
 			$scope.currentSummary = weatherData.current_summary;
 			$scope.todayMax = Math.round(weatherData.weekly_forecast.day0.max);
 			$scope.todayMin = Math.round(weatherData.weekly_forecast.day0.min);
-			$scope.forecast = weatherData.weekly_forecast;
+			// $scope.forecast = weatherData.weekly_forecast;
 			
 			var carousel = {}
+
 			carousel["set1"] = {}
 			carousel["set2"] = {}
 
@@ -24,21 +25,28 @@ function($scope, weatherService) {
 				var value = weatherData.weekly_forecast[key];
 				carousel["set1"][key] = value;
 			};
-
+			
 			var set2 = Object.keys(weatherData.weekly_forecast).slice(4, 8)
 			for (i in set2) {
 				var key = String(set2[i]);
 				var value = weatherData.weekly_forecast[key];
 				carousel["set2"][key] = value;
 			};
+			
+			carousel["set1"]["id"] = "0"
+			carousel["set2"]["id"] = "1" 
+			$scope.slides = carousel
 
-			$scope.testing = carousel
+
 		});
 	};
 
 	$scope.findWeather = function(locationQuery) {
     fetchWeather(locationQuery);
   };
+
+  $scope.active = 0;
+  var currIndex = 0;
 
 fetchWeather("Central Park");
 }]);

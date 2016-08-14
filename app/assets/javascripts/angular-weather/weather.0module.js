@@ -1,2 +1,2 @@
 angular
-	.module("weatherApp", ['angular-carousel']);
+	.module("weatherApp", ['ui.bootstrap']);
