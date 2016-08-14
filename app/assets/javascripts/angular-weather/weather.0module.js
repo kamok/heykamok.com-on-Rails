@@ -1,2 +1,2 @@
 angular
-	.module("weatherApp", []);
+	.module("weatherApp", ['angular-carousel']);
