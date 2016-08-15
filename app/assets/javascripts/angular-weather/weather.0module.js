@@ -1,2 +1,2 @@
 angular
-	.module("weatherApp", ['ui.bootstrap']);
+	.module("weatherApp", ['slick']);

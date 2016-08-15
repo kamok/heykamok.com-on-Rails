@@ -32,7 +32,7 @@ function($scope, weatherService) {
 				var value = weatherData.weekly_forecast[key];
 				carousel["set2"][key] = value;
 			};
-			
+
 			carousel["set1"]["id"] = "0"
 			carousel["set2"]["id"] = "1" 
 			$scope.slides = carousel
@@ -45,8 +45,23 @@ function($scope, weatherService) {
     fetchWeather(locationQuery);
   };
 
+
   $scope.active = 0;
-  var currIndex = 0;
+
+  // var slides = $scope.slides = [];
+
+  // $scope.addSlide = function() {
+  //   var newWidth = 600 + slides.length + 1;
+  //   slides.push({
+  //     image: 'http://lorempixel.com/' + newWidth + '/300',
+  //     text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
+  //     id: currIndex++
+  //   });
+  // };
+
+  // for (var i = 0; i < 4; i++) {
+  //   $scope.addSlide();
+  // }
 
 fetchWeather("Central Park");
 }]);
