@@ -81,18 +81,23 @@ hr.style2:after {
 }
 
 @import "bootstrap-sprockets";
-@import "bootstrap-tour.min";
+@import "small-plugins/bootstrap-tour.min";
 @import "bootstrap";
+@import "small-plugins/bootstrap-social";
 @import "bootstrap-wysihtml5/bootstrap3-wysihtml5";
+
+@import 'small-plugins/preloader';
+@import "small-plugins/weather-icons.min";
+
+// theme auto sets paths the fonts when you place this inside a folder. 
+@import "slick-theme.css";
+@import "slick.scss";
+
 @import "toys";
-@import "bootstrap-social";
 @import "pages";
 @import "posts";
 @import "scrolling-nav";
-@import "font-awesome";
 @import 'reading_lists';
+
+@import "font-awesome";
 @import 'animate';
-@import 'preloader';
-@import "weather-icons.min";
-@import "slick";
-@import "slick-theme";

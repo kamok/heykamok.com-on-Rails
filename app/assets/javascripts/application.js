@@ -19,10 +19,10 @@
 //= require angular-resource
 //= require bootstrap-sprockets
 
+//= require_tree ./angular-weather
+//= require_tree ./small-plugins
+
 //= require click_table
 //= require joke
-
-//= require_tree ./small-plugins
-//= require_tree ./angular-weather
 
 //= require_self
