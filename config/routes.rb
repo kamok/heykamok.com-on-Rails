@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   
   post "weather" => "weatherman#get_weather"
 
-  get "get-hex", to: "hex_generators#get_hex"
+  get "get_hex", to: "hex_generators#get_hex"
   post "twilio/voice" => 'twilio#voice'
   post 'twilio/notify' => 'twilio#notify'
 
