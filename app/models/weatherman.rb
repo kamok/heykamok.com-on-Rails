@@ -1,9 +1,11 @@
-if Rails.env.development?
+if Rails.env.development? || Rails.env.test?
   require 'openssl'
   OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
 end
 
 class Weatherman < ActiveRecord::Base
+
+  attr_reader :lat, :lng, :location
 
   def prepare_forecast(query)
     prepare_geo_data(query)
